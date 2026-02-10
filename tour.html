@@ -1,0 +1,515 @@
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    /* --- CSS SCOPED FOR DIVI MODULE --- */
+    
+    /* Using a unique ID wrapper to prevent conflicts */
+    #ba-tour-embed-root {
+        --ba-green: #009646;
+        --ba-blue: #2c5af5;
+        --ba-orange: #e09900;
+        --ba-text: #374151;
+        --ba-bg: #f0f4f8;
+        --ba-card-radius: 40px;
+        --ba-shadow: 0 10px 40px -10px rgba(0,0,0,0.08);
+        
+        font-family: 'Quicksand', 'Inter', sans-serif;
+        color: var(--ba-text);
+        background-color: var(--ba-bg);
+        /* Matching your dot pattern background */
+        background-image: radial-gradient(#dbeafe 2px, transparent 2px);
+        background-size: 32px 32px;
+        padding: 40px 20px;
+        line-height: 1.6;
+        border-radius: 20px; /* Optional: Rounds the corners of the whole module */
+    }
+
+    #ba-tour-embed-root * {
+        box-sizing: border-box;
+    }
+
+    #ba-tour-embed-root .tour-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* --- TYPOGRAPHY --- */
+    #ba-tour-embed-root .tour-heading-main {
+        font-family: 'Sour Gummy', cursive;
+        color: var(--ba-green);
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-top: 0;
+    }
+
+    #ba-tour-embed-root .tour-subheading {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 30px;
+        font-weight: 600;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ba-tour-embed-root h2, 
+    #ba-tour-embed-root h3 {
+        font-family: 'Sour Gummy', cursive;
+        color: var(--ba-blue);
+        font-weight: 600;
+    }
+
+    /* --- CARDS --- */
+    #ba-tour-embed-root .tour-card {
+        background: #fff;
+        border-radius: var(--ba-card-radius);
+        padding: 40px;
+        margin-bottom: 40px;
+        box-shadow: var(--ba-shadow);
+        border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    /* --- CALENDAR SECTION --- */
+    #ba-tour-embed-root .calendar-wrapper {
+        min-height: 600px; 
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* --- INFO GRID --- */
+    #ba-tour-embed-root .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    #ba-tour-embed-root .info-item {
+        background: #f8fafc;
+        padding: 25px;
+        border-radius: 20px;
+        text-align: center;
+        border: 3px solid var(--ba-green);
+    }
+    
+    #ba-tour-embed-root .info-item h3 { font-size: 1.5rem; margin-bottom: 10px; }
+
+    /* --- MINI LANDING SECTION --- */
+    #ba-tour-embed-root .mini-landing {
+        background: linear-gradient(135deg, #eefdf2 0%, #fff 100%);
+        border: 2px dashed var(--ba-green);
+    }
+
+    #ba-tour-embed-root .cta-button {
+        display: inline-block;
+        background-color: var(--ba-blue);
+        color: white !important;
+        padding: 15px 30px;
+        border-radius: 50px;
+        font-family: 'Sour Gummy', cursive;
+        font-weight: 700;
+        text-decoration: none;
+        margin-top: 20px;
+        box-shadow: 0 4px 15px rgba(44, 90, 245, 0.4);
+        transition: transform 0.2s ease;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+    #ba-tour-embed-root .cta-button:hover {
+        transform: translateY(-3px);
+        background-color: #1a3dbf;
+    }
+
+    /* --- SPLIT SECTION --- */
+    #ba-tour-embed-root .split-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    /* --- TESTIMONIALS --- */
+    #ba-tour-embed-root .testimonial-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    #ba-tour-embed-root .testimonial-card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 25px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        font-style: italic;
+        position: relative;
+    }
+    #ba-tour-embed-root .testimonial-card::before {
+        content: "“";
+        font-family: serif;
+        font-size: 60px;
+        color: var(--ba-blue);
+        opacity: 0.2;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    #ba-tour-embed-root .testimonial-author {
+        display: block;
+        margin-top: 15px;
+        font-weight: 700;
+        color: var(--ba-green);
+        font-style: normal;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    /* --- FAQ ACCORDION --- */
+    #ba-tour-embed-root .faq-details {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 15px;
+    }
+    #ba-tour-embed-root .faq-details summary {
+        font-weight: 700;
+        cursor: pointer;
+        color: var(--ba-blue);
+        font-size: 1.1rem;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Sour Gummy', cursive;
+        outline: none;
+    }
+    #ba-tour-embed-root .faq-details summary::-webkit-details-marker {
+        display: none;
+    }
+    #ba-tour-embed-root .faq-details summary::after {
+        content: '+';
+        font-size: 1.5rem;
+        color: var(--ba-green);
+    }
+    #ba-tour-embed-root .faq-details[open] summary::after {
+        content: '-';
+    }
+    #ba-tour-embed-root .faq-details p {
+        margin-top: 10px;
+        color: #555;
+        font-size: 0.95rem;
+    }
+
+    /* --- LOGO SECTION STYLES --- */
+    #ba-tour-embed-root .logo-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    
+    #ba-tour-embed-root .logo-section img {
+        width: 150px;
+        height: auto;
+    }
+
+    #ba-tour-embed-root .logo-text-h2 {
+        font-family: 'Sour Gummy', cursive;
+    }
+
+    #ba-tour-embed-root .logo-text p {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.2rem;
+        color: var(--ba-green);
+        font-weight: 700;
+        margin: 0;
+    }
+
+    /* --- MAP RESPONSIVE --- */
+    #ba-tour-embed-root .map-responsive {
+        overflow:hidden;
+        width: calc(100% + 80px); 
+        margin-left: -40px;
+        margin-bottom: -40px;
+        margin-top: 30px;
+        padding-bottom: 50%;
+        position:relative;
+        height:0;
+        border-bottom-left-radius: var(--ba-card-radius);
+        border-bottom-right-radius: var(--ba-card-radius);
+    }
+    #ba-tour-embed-root .map-responsive iframe {
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+
+    /* --- ICONS --- */
+    #ba-tour-embed-root .info-icon {
+        display: block;
+        margin: 0 auto 15px auto;
+        width: 54px;
+        height: 54px;
+        stroke: var(--ba-green);
+        stroke-width: 2;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    /* --- MOBILE OPTIMIZATION --- */
+    @media (max-width: 768px) {
+        #ba-tour-embed-root {
+            padding: 20px 10px;
+        }
+
+        #ba-tour-embed-root .tour-heading-main { 
+            font-size: 2rem;
+        }
+
+        #ba-tour-embed-root .tour-subheading {
+            font-size: 1rem;
+        }
+
+        #ba-tour-embed-root .tour-card { 
+            padding: 25px 20px;
+            border-radius: 24px; 
+            margin-bottom: 30px;
+        }
+
+        #ba-tour-embed-root .split-section {
+            grid-template-columns: 1fr !important;
+            gap: 30px;
+        }
+
+        #ba-tour-embed-root .testimonial-grid { 
+            grid-template-columns: 1fr; 
+        }
+        
+        #ba-tour-embed-root .mini-landing ul {
+            display: block;
+            text-align: left;
+            padding-left: 20px;
+        }
+        
+        #ba-tour-embed-root .cta-button {
+            width: 100%;
+        }
+
+        #ba-tour-embed-root .logo-section {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+        }
+
+        #ba-tour-embed-root .map-responsive {
+            width: calc(100% + 40px);
+            margin-left: -20px;
+            margin-bottom: -25px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }
+    }
+</style>
+
+<!-- MAIN CONTENT WRAPPER -->
+<div id="ba-tour-embed-root">
+    <div class="tour-container">
+
+        <!-- LOGO SECTION -->
+        <div class="logo-section">
+          <img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png" 
+               alt="Beibei Amigos Language Preschool Logo"
+               fetchpriority="high"
+               width="200" height="200">
+          <div class="logo-text">
+            <div class="logo-text-h2" style="font-size: 2.5rem; color: var(--ba-blue); font-weight: 800; line-height: 1.2;">Beibei Amigos</div>
+            <p>Language Preschool</p>
+          </div>
+        </div>
+
+        <!-- SECTION 1: HEADER & CALENDAR -->
+        <div class="tour-card">
+            <h1 class="tour-heading-main">Experience the Magic of Language Immersion in Three Languages: Mandarin, Spanish, and English</h1>
+            <p class="tour-subheading">Schedule your private 30-minute tour of Beibei Amigos. Morning, Afternoon, and Sunday appointments available.</p>
+            
+            <div class="calendar-wrapper">
+                <!-- YouCanBookMe Embed Code -->
+                <iframe 
+                    src="https://beibeiamigos.youcanbook.me/?noframe=true&skipHeaderFooter=true" 
+                    id="ycbmiframebeibeiamigos" 
+                    style="width:100%;height:1000px;border:0px;background-color:transparent;" 
+                    frameborder="0" 
+                    allowtransparency="true">
+                </iframe>
+                <script>
+                    window.addEventListener && window.addEventListener("message", function(event){
+                        if (event.origin === "https://beibeiamigos.youcanbook.me"){
+                            document.getElementById("ycbmiframebeibeiamigos").style.height = event.data + "px";
+                        }
+                    }, false);
+                </script>
+            </div>
+        </div>
+
+        <!-- SECTION 2: WHAT TO EXPECT -->
+        <div class="tour-card">
+            <h2 style="text-align:center;">Your 30-Minute Tour Experience</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="info-icon">
+                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <h3>Observe</h3>
+                    <p>See our <strong>Trilingual Montessori</strong> method in action. Watch how children engage with Spanish and Mandarin naturally.</p>
+                </div>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="info-icon">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <h3>Meet</h3>
+                    <p>Chat with our owner and directors. We'll discuss your child's specific needs and our low teacher-student ratios.</p>
+                </div>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="info-icon">
+                        <path d="m4 6 8-4 8 4"></path>
+                        <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2"></path>
+                        <path d="M14 22v-4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v4"></path>
+                        <path d="M18 5v17"></path>
+                        <path d="M6 5v17"></path>
+                        <circle cx="12" cy="9" r="2"></circle>
+                    </svg>
+                    <h3>Explore</h3>
+                    <p>Walk through our secure playgrounds, immersion classrooms, and see the specialized materials in our Montessori and traditional classrooms in <strong>North Phoenix (85024)</strong>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: MINI LANDING PAGE -->
+        <div class="tour-card mini-landing">
+            <div style="text-align: center;">
+                <h2>Why Beibei Amigos?</h2>
+                
+                <img src="https://www.beibeiamigos.com/wp-content/uploads/2026/01/20251103_154931-1.jpg" 
+                     alt="Child learning in Montessori classroom" 
+                     style="width: 100%; max-width: 600px; height: auto; border-radius: 20px; margin: 20px auto; display: block; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+
+                <p style="max-width: 800px; margin: 0 auto 20px auto;">
+                    If you are visiting this page for the first time, welcome! We are not just a daycare; we are a specialized <strong>Language Immersion School</strong> serving families in Phoenix, Scottsdale, and Cave Creek.
+                </p>
+                <ul style="text-align: left; display: inline-block; margin-bottom: 20px; color: #444;">
+                    <li><strong>🌍 Three Languages:</strong> Full immersion in Spanish & Mandarin + English.</li>
+                    <li><strong>🧠 Montessori & Traditional Programs:</strong> Hands-on learning that fosters independence.</li>
+                    <li><strong>👶 Ages:</strong> Serving Toddlers (1-2) through Preschool (3-5).</li>
+                </ul>
+                <br>
+                <p><strong>Not ready to book a tour yet?</strong> Learn more about our academics.</p>
+                <a href="https://www.beibeiamigos.com/" class="cta-button">Explore the school</a>
+            </div>
+        </div>
+
+        <!-- SECTION 4: TESTIMONIALS & FAQ -->
+        <div class="info-grid split-section">
+            
+            <!-- LEFT: TESTIMONIALS -->
+            <div>
+                <h2 style="margin-bottom: 20px;">Parent Stories</h2>
+                <div class="testimonial-card" style="margin-bottom: 20px;">
+                    <p>"Amazing school, amazing staff and the most adorable curriculum. My son has been here since he was 2 years old and we could not be happier. The care the teachers show him, the support he gets and everything he has learned is unmatched. He is already speaking more Spanish than me... highly recommend Bei Bei"</p>
+                    <span class="testimonial-author">- Nicole Lewis</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Both our kids have enrolled in the Montessori classes here and we love this school and the staff. They truly care about and love the kids. They teach them about their emotions and how to be a great part of their community... He just started kindergarten and this school truly set him up for success."</p>
+                    <span class="testimonial-author">- Kelsey Breecher</span>
+                </div>
+            </div>
+
+            <!-- RIGHT: FAQS -->
+            <div>
+                <h2 style="margin-bottom: 20px;">FAQs</h2>
+                
+                <details class="faq-details">
+                    <summary>What ages do you serve?</summary>
+                    <p>We serve children from 12 months (walking) up to 6 years old (Kindergarten), including our dedicated Toddler and Primary programs.</p>
+                </details>
+
+                <details class="faq-details">
+                    <summary>Can I bring my child to the tour?</summary>
+                    <p>Yes! We encourage you to bring your child so we can see how they interact with the Montessori environment.</p>
+                </details>
+
+                <details class="faq-details">
+                    <summary>Do children need to be potty trained?</summary>
+                    <p>Not for our Toddler program! We assist with potty training. For the Primary (3-6) program, potty training is usually required, but we can discuss specifics during your tour.</p>
+                </details>
+
+                <details class="faq-details">
+                    <summary>Do you offer tours on weekends?</summary>
+                    <p>Yes, we understand working parents have busy schedules. We offer select Sunday tour slots for your convenience.</p>
+                </details>
+
+                <details class="faq-details">
+                    <summary>Do you provide meals?</summary>
+                    <p>We provide healthy morning and afternoon snacks. To ensure dietary needs are met, parents provide a packed lunch.</p>
+                </details>
+
+                <details class="faq-details">
+                    <summary>Where are you located?</summary>
+                    <p>We are located at 751 E Union Hills Dr, Suite 19, Phoenix, AZ 85024.</p>
+                </details>
+
+                <details class="faq-details">
+                    <summary>Do you accept DES?</summary>
+                    <p>Yes, we accept Department of Economic Security (DES) assistance.</p>
+                </details>
+                
+                <details class="faq-details">
+                    <summary>What are your hours?</summary>
+                    <p>We are open from 7:00 AM to 6:00 PM, Monday through Friday.</p>
+                </details>
+
+                <details class="faq-details">
+                    <summary>What is your teacher-to-student ratio?</summary>
+                    <p>We maintain low ratios to ensure personal attention. This allows our teachers to guide each child individually through the Montessori curriculum.</p>
+                </details>
+
+                <details class="faq-details">
+                    <summary>Do you offer part-time schedules?</summary>
+                    <p>Yes! We offer both full-time and part-time enrollment options to provide flexibility for your family's schedule.</p>
+                </details>
+            </div>
+        </div>
+
+        <!-- SECTION 5: MAP & LOCATION -->
+        <div class="tour-card" style="margin-top: 40px;">
+            <h2 style="text-align: center; margin-bottom: 20px;">Find Us</h2>
+            <p style="text-align: center; margin-bottom: 10px;">751 E Union Hills Dr, Suite 19, Phoenix, AZ 85024</p>
+            
+            <div style="text-align: center; margin-bottom: 30px;">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=751+E+Union+Hills+Dr,+Phoenix,+AZ+85024" target="_blank" class="cta-button">Get Directions</a>
+            </div>
+            
+            <div class="map-responsive">
+                <!-- GOOGLE MAPS EMBED - Zoom Level 12 -->
+                <iframe 
+                    src="https://maps.google.com/maps?q=751+E+Union+Hills+Dr,+Phoenix,+AZ+85024&t=&z=12&ie=UTF8&iwloc=&output=embed" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+</div>
