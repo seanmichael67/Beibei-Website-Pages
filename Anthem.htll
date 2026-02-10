@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilingual Montessori Preschool Serving Anthem (85086) | Beibei Amigos</title>
+    <meta name="description" content="Preschool near Anthem: Beibei Amigos offers Spanish & Mandarin immersion just minutes from 85086 and Gavilan Peak. Book a tour!">
+    
+    <!-- SEO Canonical -->
+    <link rel="canonical" href="https://www.beibeiamigos.com/Anthem" />
+    <link rel="icon" href="https://www.beibeiamigos.com/wp-content/uploads/2023/07/favicon.png" sizes="32x32" />
+
+    <!-- Open Graph Social Tags -->
+    <meta property="og:title" content="Trilingual Montessori Preschool near Anthem">
+    <meta property="og:description" content="Spanish & Mandarin Immersion for families in 85086.">
+    <meta property="og:image" content="https://www.beibeiamigos.com/wp-content/uploads/2025/12/20250512_104926-scaled.jpg">
+    <meta property="og:url" content="https://www.beibeiamigos.com/Anthem">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Local SEO Geo Tags -->
+    <meta name="geo.region" content="US-AZ" />
+    <meta name="geo.placename" content="Phoenix" />
+    <meta name="geo.position" content="33.655;-112.065" />
+    <meta name="ICBM" content="33.655, -112.065" />
+
+    <!-- Speed Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload Hero Image for LCP Optimization -->
+    <link rel="preload" as="image" href="https://www.beibeiamigos.com/wp-content/uploads/2025/12/20250512_104926-scaled.jpg">
+    
+    <!-- CSS & Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Advanced SEO Schema (LocalBusiness + FAQ) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Preschool",
+          "name": "Beibei Amigos Language Preschool",
+          "image": "https://www.beibeiamigos.com/wp-content/uploads/2025/12/20250512_104926-scaled.jpg",
+          "@id": "https://www.beibeiamigos.com/#school",
+          "url": "https://www.beibeiamigos.com/",
+          "telephone": "+1-602-996-4990",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "751 E Union Hills Drive",
+            "addressLocality": "Phoenix",
+            "addressRegion": "AZ",
+            "postalCode": "85024",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 33.655,
+            "longitude": -112.065
+          },
+          "areaServed": {
+            "@type": "Place",
+            "name": "Anthem",
+            "postalCode": "85086"
+          },
+          "priceRange": "$$",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "07:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/BeibeiAmigosLanguageMontessori/",
+            "https://www.instagram.com/bebeiamigos_languagepreschool/",
+            "https://www.youtube.com/@beibeiamigosmontessorilang6695"
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.beibeiamigos.com/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Anthem",
+            "item": "https://www.beibeiamigos.com/Anthem"
+          }]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is Beibei Amigos near Anthem?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we are a short drive for families in 85086 and serve the Anthem community."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "With Gavilan Peak's program ending, is immersion still available?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. As the public option sunsets, Beibei Amigos remains the exclusive provider of Mandarin and Spanish immersion for the North Valley."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        .landing-page-root { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Sour Gummy', cursive; }
+        .hero-section {
+            background-image: url('https://www.beibeiamigos.com/wp-content/uploads/2025/12/20250512_104926-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: sweep .5s ease-in-out; }
+        @keyframes sweep {
+            0%    {opacity: 0; margin-top: -10px}
+            100%  {opacity: 1; margin-top: 10px}
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="landing-page-root">
+        <!-- HERO -->
+        <header class="hero-section relative h-[600px] flex items-center justify-center text-center text-white bg-gray-900">
+            <div class="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+            <div class="relative z-20 w-full max-w-6xl px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">Trilingual Montessori Preschool for Anthem Families</h1>
+                <p class="text-xl md:text-2xl mb-8 font-light text-white drop-shadow-md">
+                    Serving Anthem (85086). <strong>Spanish & Mandarin Immersion.</strong>
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-4 mb-6">
+                    <a href="https://beibeiamigos.youcanbook.me/" class="bg-red-500 hover:bg-red-600 text-white text-xl px-8 py-4 rounded-full font-bold shadow-xl transition transform hover:scale-105 flex items-center justify-center"><i class="fas fa-calendar-check mr-2"></i> Book a Tour</a>
+                    <a href="tel:6029964990" class="bg-blue-600 hover:bg-blue-700 text-white text-xl px-8 py-4 rounded-full font-bold shadow-xl transition transform hover:scale-105 flex items-center justify-center"><i class="fas fa-phone mr-2"></i> Call School</a>
+                    <a href="/enrollment" class="bg-green-500 hover:bg-green-600 text-white text-xl px-8 py-4 rounded-full font-bold shadow-xl transition transform hover:scale-105 flex items-center justify-center"><i class="fas fa-pencil-alt mr-2"></i> Enroll Now</a>
+                </div>
+                <div class="inline-block bg-black bg-opacity-40 backdrop-blur-sm rounded-lg p-3 mt-4 border border-white/20">
+                    <p class="text-sm font-medium text-white"><i class="fas fa-map-marker-alt mr-2 text-red-400"></i> Serving families near Gavilan Peak</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- BREADCRUMBS -->
+        <nav class="bg-gray-100 py-3 border-b border-gray-200 shadow-inner">
+            <div class="container mx-auto px-6 max-w-7xl text-sm text-gray-500">
+                <a href="https://www.beibeiamigos.com/" class="hover:text-blue-600">Home</a> / <span class="font-semibold text-gray-700">Anthem</span>
+            </div>
+        </nav>
+
+        <!-- FOUNDER & INTRO VIDEO SECTION -->
+        <section class="py-16 bg-white border-b border-gray-100">
+            <div class="container mx-auto px-6 max-w-7xl text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 text-gray-900" style="font-family: 'Sour Gummy', cursive;">
+                    About Beibei Amigos<br>
+                    <span class="block mt-2 text-2xl md:text-3xl text-blue-600">Our Philosophy, Mission, and Story</span>
+                </h2>
+                <p class="text-xl text-gray-600 mb-6 max-w-3xl mx-auto">Nurturing global citizens through Mandarin and Spanish immersion education in North Phoenix.</p>
+
+                <p class="text-lg text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+                    Founded by <strong>Sean Michael Diana</strong>, a former elementary teacher, Beibei Amigos began with a deeply personal mission: he started the school for his own son. Sean believes that if our children can speak the world's three most spoken languages—English, Spanish, and Mandarin—they will have the keys to unlock any career in the future. What started as a father's passion project has grown into North Phoenix's premier trilingual immersion school, blending the academic rigor of Montessori with the joy of cultural discovery.
+                </p>
+
+                <!-- Video Placeholder Wrapper -->
+                <div class="relative w-full max-w-4xl mx-auto aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-2xl mb-10 group cursor-pointer flex items-center justify-center">
+                    <div class="text-center text-white p-6">
+                        <div class="text-6xl mb-4 text-red-500 group-hover:scale-110 transition-transform duration-300">▶</div>
+                        <p class="text-2xl font-bold mb-2">Introduction Video Placeholder</p>
+                        <small class="text-gray-400">Your founder's introduction video will appear here.</small>
+                    </div>
+                    <!-- Add your iframe or video tag here inside this wrapper -->
+                </div>
+
+                <!-- CTA Group -->
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="https://beibeiamigos.youcanbook.me/" target="_blank" class="bg-red-500 hover:bg-red-600 text-white text-lg px-8 py-3 rounded-full font-bold shadow-lg transition transform hover:scale-105 flex items-center justify-center">
+                        <i class="fas fa-calendar-check mr-2"></i> Schedule a Tour
+                    </a>
+                    <a href="tel:+16029964990" class="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3 rounded-full font-bold shadow-lg transition transform hover:scale-105 flex items-center justify-center">
+                        <i class="fas fa-phone mr-2"></i> Call School
+                    </a>
+                    <a href="https://www.beibeiamigos.com/enrollment" class="bg-green-500 hover:bg-green-600 text-white text-lg px-8 py-3 rounded-full font-bold shadow-lg transition transform hover:scale-105 flex items-center justify-center">
+                        <i class="fas fa-pencil-alt mr-2"></i> Enroll Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS & ACCREDITATIONS -->
+        <section class="py-12 bg-white border-b border-gray-100">
+            <div class="container mx-auto px-6 text-center max-w-7xl">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-center mb-10">
+                    <div class="flex flex-col items-center">
+                        <span class="text-5xl font-extrabold text-blue-600 mb-2">3</span>
+                        <span class="text-lg font-bold text-gray-700 uppercase tracking-wide">Languages Taught</span>
+                    </div>
+                    <div class="flex flex-col items-center border-l-0 md:border-l md:border-r border-gray-200">
+                        <span class="text-5xl font-extrabold text-blue-600 mb-2">18+</span>
+                        <span class="text-lg font-bold text-gray-700 uppercase tracking-wide">Years Experience</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-5xl font-extrabold text-blue-600 mb-2">100%</span>
+                        <span class="text-lg font-bold text-gray-700 uppercase tracking-wide">Immersion</span>
+                    </div>
+                </div>
+
+                <!-- Combined Accreditations & Partners Box -->
+                <div class="max-w-4xl mx-auto bg-gray-50 rounded-2xl border border-gray-100 p-6 mt-8">
+                    <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16">
+                         <!-- Quality First -->
+                         <div class="flex flex-col items-center group">
+                             <img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/Quality-First-First-Things-First.jpg" alt="Quality First" width="200" height="80" class="h-16 w-auto object-contain transition-transform group-hover:scale-105">
+                             <span class="text-xs text-gray-400 font-semibold mt-2">Participant</span>
+                         </div>
+                         <!-- DES -->
+                         <div class="flex flex-col items-center group">
+                             <img src="https://www.beibeiamigos.com/wp-content/uploads/2026/01/DES-logo.jpg" alt="DES Approved" width="200" height="80" class="h-16 w-auto object-contain transition-transform group-hover:scale-105">
+                             <span class="text-xs text-blue-600 font-bold mt-2">We Accept DES</span>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="py-16 bg-blue-600 text-white">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <h2 class="text-3xl font-bold text-center text-white mb-10">What Anthem Parents Are Saying</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Review 1 -->
+                    <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg relative">
+                        <div class="text-yellow-400 text-2xl mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="italic mb-6">"My son was in the traditional preschool class... lit up daily when he saw his teachers."</p>
+                        <p class="font-bold text-blue-600">- Trinity Marquez</p>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg relative">
+                        <div class="text-yellow-400 text-2xl mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="italic mb-6">"We’ve had our little one in the Montessori class... people who work there are very welcoming."</p>
+                        <p class="font-bold text-blue-600">- Younis Elzaharna</p>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg relative">
+                        <div class="text-yellow-400 text-2xl mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="italic mb-6">"We were amazed at how quickly she picked up all three languages."</p>
+                        <p class="font-bold text-blue-600">- Robert Cooper</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIALS -->
+        <section class="py-10 bg-gray-50 border-b border-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <p class="text-gray-500 font-semibold uppercase tracking-widest mb-6 text-sm">Follow Our Adventures</p>
+                <div class="flex justify-center items-center gap-8">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/BeibeiAmigosLanguageMontessori/" target="_blank" aria-label="Facebook" class="text-blue-600 hover:text-blue-700 transition-colors transform hover:scale-110">
+                        <svg class="w-10 h-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/bebeiamigos_languagepreschool/" target="_blank" aria-label="Instagram" class="text-pink-600 hover:text-pink-700 transition-colors transform hover:scale-110">
+                        <svg class="w-10 h-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <!-- Google -->
+                    <a href="https://g.page/r/CWBJbgYgiI-wEBE/review" target="_blank" aria-label="Google Reviews" class="text-green-600 hover:text-green-700 transition-colors transform hover:scale-110">
+                        <svg class="w-10 h-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.761L12.545,10.239z"/></svg>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@beibeiamigosmontessorilang6695" target="_blank" aria-label="YouTube" class="text-red-600 hover:text-red-700 transition-colors transform hover:scale-110">
+                        <svg class="w-10 h-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISION -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 max-w-7xl flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Vision for Anthem Students</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Anthem families know that exceptional quality is worth the commute. With <strong>Gavilan Peak School</strong> officially phasing out its Mandarin Immersion program, families are looking for a sustainable alternative to keep the gift of language alive. Beibei Amigos is now the premier choice for parents willing to make the short drive south on I-17 to ensure their children don't miss the critical window for trilingual fluency. We fill the void left by the public school changes, preparing students for academic excellence at <strong>Anthem School</strong> or <strong>Great Hearts Anthem</strong> with a lifelong linguistic advantage they can no longer get locally.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/Beibei-Pouring-scaled.jpg" width="800" height="600" loading="lazy" alt="Preschool students near Anthem 85086" class="rounded-xl shadow-lg w-full object-cover h-80">
+                </div>
+            </div>
+        </section>
+
+        <!-- PROGRAMS -->
+        <section class="py-16 bg-blue-50" id="programs">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Beibei Amigos Trilingual Programs</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                     <div class="bg-white rounded-2xl p-8 border border-blue-100 shadow-lg hover:shadow-xl transition h-full flex flex-col">
+                        <div class="text-blue-500 mb-4 text-4xl"><i class="fas fa-cubes"></i></div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Traditional Program</h3>
+                        <p class="mb-4 text-gray-600">Designed for early learners, our Traditional Program uses play-based methods to naturally immerse children in <strong>Spanish and Mandarin</strong>. Through structured circle time, music, art, and storytelling, students build essential social skills and vocabulary.</p>
+                        <p class="mb-6 text-gray-600">This pathway emphasizes group interaction and emotional development, making it perfect for families in 85086 seeking a joyful introduction to school and early socialization.</p>
+                     </div>
+                     <div class="bg-white rounded-2xl p-8 border border-blue-100 shadow-lg hover:shadow-xl transition h-full flex flex-col">
+                        <div class="text-green-500 mb-4 text-4xl"><i class="fas fa-graduation-cap"></i></div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Montessori Program</h3>
+                        <p class="mb-4 text-gray-600">Strictly following Maria Montessori's philosophy, this program fosters independence, concentration, and self-directed learning. Children work with specialized materials to master math, literacy, geography, and practical life skills—all taught trilingually.</p>
+                        <p class="mb-6 text-gray-600">This academic track is the gold standard for <strong>Kindergarten readiness</strong>, specifically designed to prepare students for the rigor of <strong>Anthem School</strong> or <strong>Great Hearts Academy</strong>.</p>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KEY INFO SECTION -->
+        <section class="py-12 bg-white border-t border-gray-100">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Ages -->
+                    <div class="bg-blue-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center gap-2">
+                            <span class="text-2xl">👥</span> Ages
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            We welcome <span class="font-bold text-blue-600">toddlers (1 year walking to 2 years old)</span> and <span class="font-bold text-blue-600">preschoolers (3 to 5 years old)</span>. All programs feature full language immersion in Spanish, Mandarin, and English.
+                        </p>
+                    </div>
+
+                    <!-- Hours -->
+                    <div class="bg-blue-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center gap-2">
+                            <span class="text-2xl">🕐</span> Hours
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-2">
+                            Our school is open <span class="font-bold text-green-600">7:00 AM – 6:00 PM</span>, providing families with the flexibility of a full day program.
+                        </p>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Core academic instruction runs from <span class="font-bold text-green-600">9:00 AM – 4:00 PM</span>, when children engage in immersive learning and enrichment.
+                        </p>
+                    </div>
+
+                    <!-- Flexible Schedule -->
+                    <div class="bg-blue-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center gap-2">
+                            <span class="text-2xl">⭐</span> Flexible Schedule
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Families may select from <span class="font-bold text-blue-600">3 half days up to 5 full days</span> per week. We partner with you to design a schedule that works best for your family—providing a structured educational alternative to traditional daycare.
+                        </p>
+                    </div>
+
+                    <!-- Calendar -->
+                    <div class="bg-blue-50 rounded-xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center gap-2">
+                            <span class="text-2xl">📅</span> Calendar
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Open year round, only closed on <span class="font-bold text-green-600">national holidays</span> — convenient for working families.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-12 bg-white border-t border-gray-100">
+             <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">FAQs for Anthem Families</h2>
+                <div class="space-y-4">
+                    <!-- Local FAQ 1 -->
+                    <details class="group bg-blue-50 border border-blue-100 shadow-sm rounded-lg p-4">
+                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                            Is Beibei Amigos near Anthem?
+                            <span class="text-blue-600 transition-transform group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                        </summary>
+                        <div class="ba-answer text-gray-600 mt-3 pt-3 border-t border-blue-200">
+                            Yes, we are a straightforward drive down I-17 for families in 85086. Many parents work in the North Phoenix/Deer Valley area, making us a convenient partner for academic excellence.
+                        </div>
+                    </details>
+                    
+                    <!-- Local FAQ 2 -->
+                    <details class="group bg-blue-50 border border-blue-100 shadow-sm rounded-lg p-4">
+                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                            With Gavilan Peak's program ending, is immersion still relevant?
+                            <span class="text-blue-600 transition-transform group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                        </summary>
+                        <div class="ba-answer text-gray-600 mt-3 pt-3 border-t border-blue-200">
+                            More than ever. As the local public option sunsets, Beibei Amigos remains the <strong>exclusive provider</strong> of Mandarin and Spanish immersion accessible to Anthem families, ensuring your child captures this critical window for fluency.
+                        </div>
+                    </details>
+
+                    <!-- General FAQ 1 -->
+                    <details class="group bg-blue-50 border border-blue-100 shadow-sm rounded-lg p-4">
+                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                            Are you licensed?
+                            <span class="text-blue-600 transition-transform group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                        </summary>
+                        <div class="ba-answer text-gray-600 mt-3 pt-3 border-t border-blue-200">
+                            Yes, we are fully licensed by the <strong>ADHS</strong>.
+                        </div>
+                    </details>
+
+                    <!-- General FAQ 2 -->
+                    <details class="group bg-blue-50 border border-blue-100 shadow-sm rounded-lg p-4">
+                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                            Sibling discount?
+                            <span class="text-blue-600 transition-transform group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                        </summary>
+                        <div class="ba-answer text-gray-600 mt-3 pt-3 border-t border-blue-200">
+                            Yes! <strong>10% discount</strong> for siblings.
+                        </div>
+                    </details>
+
+                    <!-- General FAQ 3 -->
+                    <details class="group bg-blue-50 border border-blue-100 shadow-sm rounded-lg p-4">
+                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                            Potty training required?
+                            <span class="text-blue-600 transition-transform group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                        </summary>
+                        <div class="ba-answer text-gray-600 mt-3 pt-3 border-t border-blue-200">
+                            Only for the 3-year-old classroom. We help train toddlers.
+                        </div>
+                    </details>
+                </div>
+             </div>
+        </section>
+
+        <!-- MAP -->
+        <section class="py-16 bg-white" id="location">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Find Our Campus</h2>
+                <div class="relative w-full h-96 rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                    <!-- Dynamic Google Maps Embed (Directions from Zip Code) -->
+                    <iframe src="https://maps.google.com/maps?saddr=85086&daddr=751+E+Union+Hills+Drive,+Phoenix,+AZ+85024&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="mt-8 text-center">
+                    <a href="https://www.google.com/maps/dir/85086/751+E+Union+Hills+Drive,+Phoenix,+AZ+85024" target="_blank" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg transition transform hover:scale-105">
+                        <i class="fas fa-location-arrow mr-2"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- GLOBAL FOOTER (User Provided) -->
+        <!-- Your existing global footer script/code will be injected here by your CMS -->
+
+    </div>
+</body>
+</html>
