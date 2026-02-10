@@ -1,0 +1,408 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What ages do you accept at Beibei Amigos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We welcome toddlers (1 year walking to 2 years old) and preschoolers (3 to 5 years old). All programs feature full language immersion in Spanish, Mandarin, and English." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Beibei Amigos a Montessori school or a daycare?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We are a comprehensive Early Childhood Education (ECE) center, offering more than just daycare services. We provide both Montessori and Traditional curriculums with a focus on Kindergarten readiness." }
+    },
+    {
+      "@type": "Question",
+      "name": "What languages are taught?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We provide 100% language immersion in Spanish, Mandarin Chinese, and English—preparing children for a global future." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer part-time schedules?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, families may select from 3 half days up to 5 full days per week. We partner with you to design a flexible schedule." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you accept DES child care assistance?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, we are a DES-certified provider. We accept Department of Economic Security (DES) assistance to help eligible families with tuition costs." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I enroll my child in only Spanish or only Mandarin?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, our program is a fully immersive trilingual experience. All students benefit from exposure to Spanish, Mandarin, and English to maximize cognitive development. We do not offer single-language tracks." }
+    }
+  ]
+}
+</script>
+
+<style>
+    /* Font Import (Safe for Body) */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    /* Divi Override Resets */
+    .et_pb_section, .et_pb_row, .et_pb_code { padding:0 !important; margin: 0 !important; }
+    .et_pb_row { max-width:100% !important; width:100% !important; }
+    
+    /* Custom Variables */
+    :root {
+      --color-primary: #1e40af;
+      --color-accent: #16a34a;
+      --color-highlight: #2563eb;
+      --color-bg: #f0f4f8;
+      --color-text: #374151;
+      --muted: #6b7280;
+      --bebei-green: #16a34a;
+      --radius-card: 40px;
+      --shadow-soft: 0 10px 40px -10px rgba(0,0,0,0.08);
+    }
+
+    /* Container Styling */
+    .bebei-landing-page * { margin: 0; padding: 0; box-sizing: border-box; }
+    .bebei-landing-page { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: var(--color-text); background-color: var(--color-bg); background-image: radial-gradient(#dbeafe 2px, transparent 2px); background-size: 32px 32px; position: relative; width: 100%; overflow-x: hidden; padding-top: 1px; padding-bottom: 24px; }
+    .bebei-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    
+    .bebei-landing-page section { background: #fff; border-radius: var(--radius-card); margin: 32px 24px; overflow: hidden; box-shadow: var(--shadow-soft); border: 1px solid rgba(255,255,255,0.5); transition: transform 0.3s ease; }
+    @media (min-width: 1024px) { .bebei-landing-page section:hover { transform: translateY(-2px); box-shadow: 0 15px 50px -10px rgba(0,0,0,0.12); } }
+    @media (max-width: 768px) { .bebei-landing-page section { border-radius: 24px; margin: 16px 12px; } }
+
+    /* Button Styles */
+    .bebei-btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border-radius: 12px; font-weight: 700; text-decoration: none; transition: all 0.2s; cursor: pointer; border: none; font-size: 16px; letter-spacing: 0.5px; min-height: 48px; }
+    .btn-primary { background: linear-gradient(135deg, var(--color-highlight), var(--color-accent)); color: white !important; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); }
+    .btn-primary:hover { opacity: 0.95; transform: translateY(-2px); box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4); }
+    .btn-outline { background: white; border: 2px solid var(--color-accent); color: var(--color-accent) !important; }
+    .btn-outline:hover { background: var(--color-accent); color: white !important; }
+    .btn-glow { background: linear-gradient(135deg, #1e40af, #2563eb); color: white !important; box-shadow: 0 0 20px rgba(37, 99, 235, 0.5); transform: scale(1.05); z-index: 10; border: 2px solid white; }
+    .btn-glow:hover { box-shadow: 0 0 30px rgba(37, 99, 235, 0.7); transform: scale(1.1) translateY(-2px); opacity: 1; }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%); padding: 60px 0; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+    @media (max-width: 1024px) { .hero-grid { grid-template-columns: 1fr; } }
+
+    .logo-section { display: flex; align-items: center; gap: 24px; margin-bottom: 32px; flex-wrap: wrap; justify-content: center; }
+    .logo-section img { width: 200px; height: 200px; object-fit: contain; }
+    .logo-text-h2 { font-size: 2.5rem; color: var(--color-highlight); font-weight: 800; margin-bottom: 0; line-height: 1.2; }
+    .logo-text p { font-size: 1.5rem; color: var(--color-accent); font-weight: 700; margin-bottom: 0; }
+    .hero-title { font-size: 2.2rem; font-weight: 800; color: var(--color-primary); text-align: center; margin-bottom: 16px; line-height: 1.2; }
+    .hero-subtitle { font-size: 1.4rem; color: var(--color-accent); font-weight: 600; text-align: center; margin-bottom: 32px; }
+
+    .btn-group { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-bottom: 32px; }
+    .btn-group .bebei-btn { min-width: 180px; }
+
+    /* Welcome Box */
+    .welcome-box { background: linear-gradient(135deg, #dcfce7 0%, #dbeafe 100%); border-radius: 24px; padding: 32px; margin-bottom: 32px; border: 2px solid white; box-shadow: var(--shadow-soft); }
+    .welcome-box h2 { font-size: 1.4rem; color: var(--color-primary); margin-bottom: 16px; font-weight: 700; }
+    .welcome-box p { color: #4b5563; margin-bottom: 16px; font-size: 1.05rem; }
+    .welcome-box .mission { font-size: 1.1rem; color: var(--color-primary); font-weight: 600; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 16px; }
+
+    /* Stats & Logos */
+    .stats { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin: 32px 0; }
+    .stat { text-align: center; }
+    .stat-number { font-size: 2.5rem; font-weight: 800; color: var(--color-highlight); }
+    .stat-label { color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; font-size: 0.9rem; }
+
+    .quality-logos { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin: 32px 0; }
+    .quality-logos img { height: 80px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1)); }
+
+    /* Info Cards */
+    .info-card { background: white; border-radius: 16px; padding: 24px; margin-bottom: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid #f3f4f6; }
+    .info-card h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 12px; color: var(--color-primary); }
+    .info-card .icon { width: 40px; height: 40px; background: linear-gradient(135deg, #eff6ff, #dbeafe); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-highlight); font-style: normal; font-size: 1.2rem; }
+    .info-card p { color: #4b5563; }
+    .info-card .highlight { font-weight: 700; color: var(--color-highlight); }
+
+    /* Contact & Chat */
+    .chat-embed { border-radius: 24px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); margin-bottom: 24px; border: 4px solid white; }
+    .contact-card { background: #f8fafc; border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+    .contact-card h3 { font-size: 1.25rem; font-weight: 700; color: var(--color-primary); margin-bottom: 16px; }
+    .contact-item { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .contact-item a { color: var(--color-accent); text-decoration: none; font-weight: 500; }
+    .contact-item a:hover { text-decoration: underline; }
+
+    /* Programs Section */
+    .programs { padding: 80px 0; background: #fff; }
+    .section-title { font-size: 2.5rem; font-weight: 800; color: var(--color-primary); text-align: center; margin-bottom: 16px; }
+    .section-subtitle { font-size: 1.25rem; color: var(--muted); text-align: center; max-width: 600px; margin: 0 auto 48px; }
+    .programs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    @media (max-width: 1024px) { .programs-grid { grid-template-columns: 1fr; } }
+    .program-card { background: #fff; border-radius: 32px; padding: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); border: 1px solid #f3f4f6; position: relative; overflow: hidden; }
+    .program-card::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 8px; background: linear-gradient(90deg, var(--color-highlight), var(--color-accent)); }
+    .program-card h3 { font-size: 1.8rem; font-weight: 700; color: var(--color-primary); text-align: center; margin-bottom: 5px; }
+    .program-card h4 { font-size: 1.2rem; color: var(--muted); text-align: center; margin-bottom: 16px; font-weight: 500; }
+    .program-card .details { background: #f8fafc; padding: 10px; border-radius: 8px; color: #555; font-size: 0.95rem; text-align: center; margin-bottom: 24px; font-weight: 500; }
+    .program-card .description { color: #4b5563; text-align: center; margin-bottom: 24px; font-size: 1.05rem; }
+    .program-card h5 { font-weight: 700; color: var(--color-primary); margin-bottom: 16px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
+    .program-card ul { list-style: none; margin: 0; padding: 0; }
+    .program-card li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; color: #4b5563; font-size: 0.95rem; }
+    .program-card li::before { content: "✓"; color: var(--color-accent); font-weight: 800; }
+
+    /* Tuition Form Styles */
+    .tuition-card { display: flex; flex-wrap: wrap; background: white; border-radius: 32px; overflow: hidden; box-shadow: none; }
+    .tuition-content { flex: 1; padding: 40px; min-width: 300px; background: url('https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png') no-repeat right bottom; background-size: 150px; position: relative; }
+    .tuition-content::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,0.92); z-index: 0; }
+    .tuition-content > * { position: relative; z-index: 1; }
+    .tuition-form-wrapper { flex: 1; padding: 40px; min-width: 300px; background: #f8fafc; border-left: 1px solid #f1f5f9; position: relative; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 6px; color: var(--color-text); font-size: 0.9rem; }
+    .form-group input, .form-group select { width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 12px; font-size: 1rem; font-family: inherit; transition: border-color 0.2s; background: #fff; }
+    .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); }
+    .tuition-success-message { display: none; text-align: center; padding: 40px; }
+    .tuition-success-message h3 { color: var(--color-accent); font-size: 1.5rem; margin-bottom: 10px; }
+    .tuition-success-message p { color: var(--color-text); }
+    .btn-loading { opacity: 0.7; pointer-events: none; cursor: wait; }
+    @media (max-width: 768px) { .tuition-card { flex-direction: column; } .tuition-form-wrapper { border-left: none; border-top: 1px solid #f1f5f9; } .tuition-content { background-image: none; padding: 24px; } .tuition-form-wrapper { padding: 24px; } }
+
+    /* Testimonials */
+    .testimonials { padding: 80px 0; background: linear-gradient(135deg, #dcfce7 0%, #dbeafe 100%); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    @media (max-width: 1024px) { .testimonials-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 768px) { .testimonials-grid { grid-template-columns: 1fr; } }
+    .testimonial-card { background: #fff; border-radius: 20px; padding: 24px; box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+    .stars { color: #fbbf24; margin-bottom: 8px; letter-spacing: 2px; }
+    .testimonial-date { font-size: 0.85rem; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.5px; }
+    .testimonial-content { color: #374151; margin: 16px 0; font-style: italic; line-height: 1.6; }
+    .testimonial-author { display: flex; align-items: center; gap: 12px; border-top: 1px solid #f3f4f6; padding-top: 16px; }
+    .author-avatar { width: 40px; height: 40px; background: #eff6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-highlight); font-weight: 700; font-size: 0.9rem; }
+    .author-name { font-weight: 700; color: var(--color-primary); }
+
+    /* Science & FAQ */
+    .science { padding: 80px 0; background: #fff; }
+    .science-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    @media (max-width: 1024px) { .science-grid { grid-template-columns: 1fr; } }
+    .science h2 { font-size: 2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 24px; }
+    .science p { color: #4b5563; margin-bottom: 32px; font-size: 1.1rem; }
+    .science-point { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; }
+    .science-point .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-top: 6px; flex-shrink: 0; }
+    .science-point .dot.green { background: var(--color-accent); box-shadow: 0 0 0 4px #dcfce7; }
+    .science-point .dot.blue { background: var(--color-highlight); box-shadow: 0 0 0 4px #dbeafe; }
+    .stats-card { background: #f8fafc; border-radius: 24px; padding: 32px; text-align: center; border: 2px solid #eff6ff; }
+    .stats-card .big-number { font-size: 2.5rem; font-weight: 800; line-height: 1; margin-bottom: 8px; }
+    .stats-card .big-number.blue { color: var(--color-highlight); }
+    .stats-card .big-number.green { color: var(--color-accent); }
+    .stats-card .label { color: #6b7280; font-size: 0.9rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+    .stats-card hr { border: none; height: 1px; background: #e5e7eb; margin: 24px 0; }
+
+    .faq { padding: 64px 0; background: #fff; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    @media (max-width: 768px) { .faq-grid { grid-template-columns: 1fr; gap: 24px; } }
+    .faq-item { margin-bottom: 24px; }
+    .faq-question { font-weight: 700; color: var(--color-primary); font-size: 1.15rem; margin-bottom: 8px; }
+    .faq-answer { color: #4b5563; line-height: 1.6; }
+
+    /* Gallery */
+    .gallery { padding: 80px 0; background: #fff; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    @media (max-width: 1024px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 768px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+    .gallery-item { position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); background-color: #eee; transform: translateZ(0); }
+    .gallery-item img { width: 100%; height: 220px; object-fit: cover; object-position: top; transition: transform 0.5s ease; }
+    .gallery-item:hover img { transform: scale(1.1); }
+    .gallery-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); opacity: 0; transition: opacity 0.3s; display: flex; align-items: flex-end; padding: 20px; }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay h4 { color: white; font-weight: 700; margin-bottom: 4px; font-size: 1.1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+    .gallery-overlay p { color: rgba(255,255,255,0.9); font-size: 0.9rem; line-height: 1.4; }
+
+    /* Footer & Social */
+    .cta { padding: 40px 0; background: transparent; }
+    .footer { padding: 40px 0; background: #fff; text-align: center; border-radius: 40px; margin: 24px; overflow: hidden; box-shadow: var(--shadow-soft); }
+    @media (max-width: 768px) { .footer { border-radius: 24px; margin: 12px; } }
+    .footer-nap { margin-top: 20px; color: #6b7280; font-size: 0.95rem; line-height: 1.8; }
+    .footer-nap strong { color: var(--color-primary); }
+    .footer-nap a { color: var(--color-accent); text-decoration: none; }
+    .copyright { color: #9ca3af; font-size: 0.9rem; margin-top: 30px; }
+
+    .social-map-container { margin-top: 30px; text-align: center; background: #f8fafc; padding: 40px 20px; border-radius: 24px; box-shadow: inset 0 2px 10px rgba(0,0,0,0.03); }
+    .social-map-title { font-size: 2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1.5px; }
+    .social-map-icons { display: flex; justify-content: center; gap: 30px; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 10px; }
+    .social-icon-link { display: inline-flex; align-items: center; justify-content: center; width: 80px; height: 80px; border-radius: 20px; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); flex-shrink: 0; }
+    .social-icon-link:hover { transform: translateY(-8px) scale(1.05); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+    .social-icon-link svg { width: 40px; height: 40px; fill: currentColor; }
+    @media (max-width: 600px) { .social-icon-link { width: 60px; height: 60px; border-radius: 16px; } .social-icon-link svg { width: 30px; height: 30px; } .social-map-icons { gap: 15px; } }
+    .social-icon-link.fb { color: #1877F2; } .social-icon-link.insta { color: #E4405F; } .social-icon-link.google { color: #EA4335; } .social-icon-link.youtube { color: #FF0000; }
+</style>
+
+<div class="bebei-landing-page">
+<section class="hero">
+  <div class="bebei-container">
+    <div class="hero-grid">
+      <div>
+        <div class="logo-section">
+          <img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png" 
+               alt="Beibei Amigos Language Preschool Logo"
+               fetchpriority="high"
+               width="200" height="200">
+          <div class="logo-text">
+            <div class="logo-text-h2" style="font-size: 2.5rem; color: var(--color-highlight); font-weight: 800; line-height: 1.2;">Beibei Amigos</div>
+            <p>Language Preschool</p>
+          </div>
+        </div>
+
+        <h1 class="hero-title">Trilingual Montessori Preschool in Spanish and Mandarin Serving North Phoenix</h1>
+        <p class="hero-subtitle">Montessori and Traditional Curriculums</p>
+
+        <div class="btn-group">
+          <a href="https://beibeiamigos.youcanbook.me/" target="_blank" class="bebei-btn btn-glow">Schedule a Tour</a>
+          <a href="tel:+16029964990" class="bebei-btn btn-primary">Call School</a>
+        </div>
+
+      <div class="welcome-box">
+  <h2>Welcome, Bienvenidos, 你好</h2>
+  <p>Welcome to Beibei Amigos, the only <strong>Trilingual Preschool</strong> Phoenix families choose for authentic language immersion. Founded by former teacher and parent Sean Michael Diana, Beibei Amigos is a Montessori and traditional preschool located in North Phoenix. Sean opened the school for his son after living in Spain, where he witnessed firsthand that full immersion is the most natural way for young children to learn. Explore our <a href="/programs/">immersion programs</a> to see how we maximize the critical years when brains are hard-wiring for language development.</p>
+  <p style="margin-top: 15px;">Whether you are searching for a Spanish immersion preschool or a Mandarin immersion preschool, our campus offers a warm, nurturing, and world-class learning environment. Conveniently located just off Loop 101 and 7th Street, we proudly serve families in 85024, Desert Ridge, Paradise Valley, Deer Valley, and the greater North Phoenix area.</p>
+  <p class="mission">Our mission is to prepare children for the future by teaching them the three most spoken languages in the world.</p>
+</div>
+
+        <div class="stats">
+          <div class="stat"><div class="stat-number">3</div><div class="stat-label">Languages</div></div>
+          <div class="stat"><div class="stat-number">18+</div><div class="stat-label">Years Experience</div></div>
+          <div class="stat"><div class="stat-number">100%</div><div class="stat-label">Language Immersion</div></div>
+        </div>
+
+        <div class="quality-logos">
+          <img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/Quality-First-First-Things-First.jpg" alt="Quality First Logo" width="160" height="80">
+          <img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/Quality-Star-Rating.jpg" alt="Quality Plus - Exceeds Quality Standards" width="160" height="80">
+        </div>
+
+        <div class="info-card"><h3><i class="icon">👥</i> Ages</h3><p>We welcome <span class="highlight">toddlers (1 year walking to 2 years old)</span> and <span class="highlight">preschoolers (3 to 5 years old)</span>. All programs feature full language immersion in Spanish, Mandarin, and English.</p></div>
+        <div class="info-card"><h3><i class="icon">🕐</i> Hours</h3><p>Our school is open <span class="highlight" style="color: var(--bebei-green);">7:00 AM – 6:00 PM</span>, providing families with the flexibility of a full day program.</p><p>Core academic instruction runs from <span class="highlight" style="color: var(--bebei-green);">9:00 AM – 4:00 PM</span>, when children engage in immersive learning and enrichment.</p></div>
+        <div class="info-card"><h3><i class="icon">⭐</i> Flexible Schedule</h3><p>Families may select from <span class="highlight">3 half days up to 5 full days</span> per week. We partner with you to design a schedule that works best for your family—providing a structured educational alternative to traditional daycare.</p></div>
+        <div class="info-card"><h3><i class="icon">📅</i> Calendar</h3><p>Open year round, only closed on <span class="highlight" style="color: var(--bebei-green);">national holidays</span> — convenient for working families.</p></div>
+
+        <div class="cta-section-below-calendar" style="margin-top: 32px;">
+          <div class="btn-group" style="display: flex; width: 100%; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+            <a href="https://beibeiamigos.youcanbook.me/" target="_blank" class="bebei-btn btn-glow" style="flex: 1; min-width: 45%; text-align: center; padding: 12px 8px;">Schedule a Tour</a>
+            <a href="tel:+16029964990" class="bebei-btn btn-primary" style="flex: 1; min-width: 45%; text-align: center; padding: 12px 8px;">Call School</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="chat-embed">
+          <iframe src="https://beibeiamigosgpt.onrender.com" width="100%" height="1275" style="border: none; border-radius: 10px; overflow: hidden;" scrolling="no" title="Chat"></iframe>
+        </div>
+
+        <div class="contact-card">
+          <h3>Visit Us</h3>
+          <div class="contact-item"><span>📍</span><span>751 E. Union Hills Drive, Phoenix, AZ 85024</span></div>
+          <div class="contact-item"><span>📞</span><a href="tel:(602)996-4990">(602) 996-4990</a></div>
+          <div class="contact-item"><span>✉️</span><a href="mailto:admin@beibeiamigos.com">admin@beibeiamigos.com</a></div>
+        </div>
+
+        <div class="info-card" style="padding: 0; overflow: hidden; display: block;">
+            <div style="padding: 20px 24px 10px;"><h3 style="margin: 0; display: flex; align-items: center; gap: 10px;"><span style="font-size: 1.5rem;">🗺️</span> Find Our Campus</h3></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106385.0!2d-112.06!3d33.655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNzUxIEUgVW5pb24gSGlsbHMgRHIsIFBob2VuaXgsIEFaIDg1MDI0!5e0!3m2!1sen!2sus!4v1647886400000!5m2!1sen!2sus" width="100%" height="400" style="border: 0; display: block;" allowfullscreen loading="lazy" title="Beibei Amigos Location"></iframe>
+            <div style="padding: 20px; text-align: center; background: #f9fafb;"><a href="https://www.google.com/maps/search/?api=1&query=751+E+Union+Hills+Dr,+Phoenix,+AZ+85024" target="_blank" class="bebei-btn btn-outline" style="width: 100%; justify-content: center;">📍 Get Directions</a></div>
+        </div>
+
+        <div class="social-map-container">
+            <div class="social-map-title">Connect With Us</div>
+            <div class="social-map-icons">
+                <a href="https://www.facebook.com/BeibeiAmigosLanguageMontessori/" target="_blank" class="social-icon-link fb" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a href="https://www.instagram.com/bebeiamigos_languagepreschool/" target="_blank" class="social-icon-link insta" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                <a href="https://g.page/r/CWBJbgYgiI-wEBE/review" target="_blank" class="social-icon-link google" aria-label="Google Reviews"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.761L12.545,10.239z"/></svg></a>
+                <a href="https://www.youtube.com/@beibeiamigosmontessorilang6695" target="_blank" class="social-icon-link youtube" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="programs">
+  <div class="bebei-container">
+    <h2 class="section-title">Beibei Amigos Trilingual Programs</h2>
+    <p class="section-subtitle">Carefully structured programs that grow with your child, ensuring optimal language development at every stage.</p>
+    <div class="programs-grid">
+      <div class="program-card">
+        <h3>✨ Traditional Program</h3><h4>Play-Based Learning</h4>
+        <p class="details">👥 Toddlers: 1 year (walking) to 2 years old | Preschool: 3 to 5 years old<br>🕐 Full and Half Days Available</p>
+        <p class="description">Our traditional program uses play-based learning to naturally immerse children in Spanish and Mandarin while building essential skills through exploration and creativity. This <strong>Pre-K</strong> pathway focuses on early socialization and learning.</p>
+        <h5>Program Highlights:</h5><ul><li>Spanish & Mandarin immersion through songs, stories, and games</li><li>Play-based curriculum that builds social, emotional, and academic skills</li><li>Hands-on projects that spark creativity and curiosity</li><li>Early literacy and language arts in three languages through play centers</li><li>Math concepts introduced with puzzles, manipulatives, and group activities</li><li>Cultural exploration with music, art, and dramatic play</li><li>Leadership opportunities through classroom jobs and collaborative play</li></ul>
+      </div>
+      <div class="program-card">
+        <h3>🎓 Montessori Program</h3><h4>The Five Areas of Learning</h4>
+        <p class="details">👥 Toddlers: 1 year (walking) to 2 years old | Preschool: 3 to 5 years old<br>🕐 Full and Half Days Available</p>
+        <p class="description">Our Montessori program follows Maria Montessori's philosophy with full language immersion in Spanish, Mandarin, and English. Perfect for <strong>Kindergarten readiness</strong>.</p>
+        <h5>Program Highlights:</h5><ul><li>Practical Life: Children build independence and confidence through self-care routines, food preparation, and care of the classroom environment</li><li>Sensorial: Materials develop the senses by exploring shapes, colors, textures, and patterns, forming the foundation for math and science</li><li>Language: Immersion in Spanish, Mandarin, and English with phonetic materials, vocabulary development, and storytelling</li><li>Mathematics: Hands-on Montessori math materials introduce counting, number sense, place value, and operations</li><li>Cultural Studies: Geography, science, and global awareness brought to life through maps, globes, nature studies, and cultural celebrations</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="bebei-container">
+    <h2 class="section-title">What Our Families Say</h2>
+    <p class="section-subtitle">Real reviews from parents who trust us with their children's education and growth</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card"><div class="stars">⭐⭐⭐⭐⭐</div><span class="testimonial-date">Sep 13, 2024</span><p class="testimonial-content">"BeiBei Amigos is truly a gem of a daycare and school! From the moment we stepped in, we were embraced by the warm, caring environment that makes both children and parents feel at home."</p><div class="testimonial-author"><div class="author-avatar">AP</div><div><p class="author-name">Ashley Parkinson</p><p style="font-size: 0.85rem; color: var(--muted);">Parent</p></div></div></div>
+      <div class="testimonial-card"><div class="stars">⭐⭐⭐⭐⭐</div><span class="testimonial-date">Aug 26, 2024</span><p class="testimonial-content">"I can't say enough about this amazing place! Great teachers, safe, fun, and great learning environment. Keep up the great work."</p><div class="testimonial-author"><div class="author-avatar">RM</div><div><p class="author-name">Richard Moreno</p><p style="font-size: 0.85rem; color: var(--muted);">Parent</p></div></div></div>
+      <div class="testimonial-card"><div class="stars">⭐⭐⭐⭐⭐</div><span class="testimonial-date">Aug 26, 2024</span><p class="testimonial-content">"Bei Bei Amigos is a wonderful school to send your children. Both of my kids went there and learned Spanish and Mandarin. The multilingual education is incredible!"</p><div class="testimonial-author"><div class="author-avatar">CK</div><div><p class="author-name">Crystal Keith</p><p style="font-size: 0.85rem; color: var(--muted);">Parent</p></div></div></div>
+      <div class="testimonial-card"><div class="stars">⭐⭐⭐⭐⭐</div><span class="testimonial-date">Aug 14, 2024</span><p class="testimonial-content">"We have had the best experience here! My toddler is speaking other languages at home and it is incredible!!! The language immersion really works."</p><div class="testimonial-author"><div class="author-avatar">CK</div><div><p class="author-name">Courtney Knotts</p><p style="font-size: 0.85rem; color: var(--muted);">Parent</p></div></div></div>
+      <div class="testimonial-card"><div class="stars">⭐⭐⭐⭐⭐</div><span class="testimonial-date">Aug 26, 2024</span><p class="testimonial-content">"BeiBei Amigos was an amazing experience for it being the first group of individuals I trusted my son with outside of family. They created such a nurturing environment."</p><div class="testimonial-author"><div class="author-avatar">TM</div><div><p class="author-name">Trinity Marquez</p><p style="font-size: 0.85rem; color: var(--muted);">Parent</p></div></div></div>
+      <div class="testimonial-card"><div class="stars">⭐⭐⭐⭐⭐</div><span class="testimonial-date">Oct 1, 2020</span><p class="testimonial-content">"This is an AMAZING SCHOOL! Benefits: Private, excellent communication with families, efforts to connect to their community, and so much more. Highly recommended!"</p><div class="testimonial-author"><div class="author-avatar">NR</div><div><p class="author-name">Nicole Raymond</p><p style="font-size: 0.85rem; color: var(--muted);">Parent</p></div></div></div>
+    </div>
+    <p style="text-align: center; margin-top: 48px; color: var(--muted);">Join our community of happy families today!</p>
+  </div>
+</section>
+
+<section class="science">
+  <div class="bebei-container">
+    <div class="science-grid">
+      <div>
+        <h2>The Neuroscience of Early Multilingualism</h2>
+        <p>The human brain is most receptive to language acquisition between birth and age 7, a phase known as the <strong>critical period</strong>. During this window, high levels of <strong>neuroplasticity</strong> allow children to acquire Mandarin, Spanish, and English simultaneously, not just as subjects, but as native cognitive pathways.</p>
+        <div class="science-point"><span class="dot green"></span><span><strong>Executive Function & Prefrontal Cortex:</strong> Navigating three linguistic systems strengthens the brain's command center, improving focus, impulse control, and multitasking abilities.</span></div>
+        <div class="science-point"><span class="dot blue"></span><span><strong>Cognitive Flexibility & Divergent Thinking:</strong> Multilingual children demonstrate superior pattern recognition and abstract problem-solving skills compared to monolingual peers.</span></div>
+        <div class="science-point"><span class="dot green"></span><span><strong>Metalinguistic Awareness:</strong> Understanding the structure of multiple languages builds a stronger foundation for early literacy and reading readiness in English.</span></div>
+      </div>
+      <div>
+        <img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/Brain-image.jpg" alt="Brain with neural pathways" style="width: 100%; max-width: 320px; display: block; margin: 0 auto 24px;" width="320" height="240">
+        <div class="stats-card">
+          <div class="big-number blue">Birth to Age 7</div><div class="label">Critical Period for Synaptic Density</div><hr>
+          <div class="big-number green">97%</div><div class="label">Native-like Pronunciation Potential</div><hr>
+          <div class="big-number blue">95%</div><div class="label">of our graduates</div><div class="label">Continue their multilingual journey in elementary school with confidence and enthusiasm</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="bebei-container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Common questions about our programs and admissions</p>
+    <div class="faq-grid">
+      <div class="faq-item"><h3 class="faq-question">What ages do you accept?</h3><p class="faq-answer">We welcome toddlers (1 year walking to 2 years old) and preschoolers (3 to 5 years old). All programs feature full language immersion.</p></div>
+      <div class="faq-item"><h3 class="faq-question">Is Beibei Amigos a Montessori school or a daycare?</h3><p class="faq-answer">More than just a daycare, we provide a comprehensive early childhood education. We offer both Montessori and Traditional curriculums with a focus on Kindergarten readiness.</p></div>
+      <div class="faq-item"><h3 class="faq-question">What languages are taught?</h3><p class="faq-answer">We provide 100% language immersion in Spanish, Mandarin Chinese, and English—preparing children for a global future.</p></div>
+      <div class="faq-item"><h3 class="faq-question">Do you offer part-time schedules?</h3><p class="faq-answer">Yes, families may select from 3 half days up to 5 full days per week. We partner with you to design a flexible schedule.</p></div>
+      <div class="faq-item"><h3 class="faq-question">Do you accept DES child care assistance?</h3><p class="faq-answer">Yes, we are a DES-certified provider. We accept Department of Economic Security (DES) assistance to help eligible families with tuition costs.</p></div>
+      <div class="faq-item"><h3 class="faq-question">Can I enroll my child in only Spanish or only Mandarin?</h3><p class="faq-answer">No, our program is a fully immersive trilingual experience. All students benefit from exposure to Spanish, Mandarin, and English to maximize cognitive development. We do not offer single-language tracks.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="bebei-container">
+    <div class="cta-buttons">
+      <a href="https://beibeiamigos.youcanbook.me/" target="_blank" class="bebei-btn btn-glow">Schedule a Tour</a>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="bebei-container">
+    <h2 class="section-title">Our Students in Action</h2>
+    <p class="section-subtitle">Discover the joy of learning through our trilingual immersion experience. See how our students engage, explore, and grow every day.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/Beibei-rubber-bands-scaled.jpg" alt="Science Discovery - hands-on learning through color mixing and science exploration" width="300" height="220"><div class="gallery-overlay"><div><h4>Science Discovery</h4><p>Hands-on learning through color mixing and science exploration</p></div></div></div>
+      <div class="gallery-item"><img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/Beibei-kennedy-eyedropper-scaled.jpg" alt="Practical Life Skills - Montessori lock and key activity for independence in North Phoenix" width="300" height="220"><div class="gallery-overlay"><div><h4>Practical Life Skills</h4><p>Building independence through Montessori activities</p></div></div></div>
+      <div class="gallery-item"><img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/beibei-dana-circle-time.jpg" alt="Circle Time Learning - interactive storytelling in Spanish, Mandarin, and English" width="300" height="220"><div class="gallery-overlay"><div><h4>Circle Time Learning</h4><p>Interactive storytelling in Spanish, Mandarin, and English</p></div></div></div>
+      <div class="gallery-item"><img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/20250506_103302.jpg" alt="Early Literacy - toddler reading books in language immersion environment" width="300" height="220"><div class="gallery-overlay"><div><h4>Early Literacy</h4><p>Fostering a love of reading through age-appropriate books</p></div></div></div>
+      <div class="gallery-item"><img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/reading.jpg" alt="Independent Reading - child enjoying books in cozy reading corner at Phoenix preschool" width="300" height="220"><div class="gallery-overlay"><div><h4>Independent Reading</h4><p>Self-directed learning in our cozy reading area</p></div></div></div>
+      <div class="gallery-item"><img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/Beibei-Pouring-scaled.jpg" alt="Montessori Pouring - developing fine motor skills and coordination with water activities" width="300" height="220"><div class="gallery-overlay"><div><h4>Montessori Pouring</h4><p>Developing coordination through traditional Montessori activities</p></div></div></div>
+      <div class="gallery-item"><img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/amici-chinese-boy-doing-math.jpg" alt="Montessori Math - hands-on bead materials for mathematical foundations in Phoenix" width="300" height="220"><div class="gallery-overlay"><div><h4>Montessori Math</h4><p>Building mathematical foundations with hands-on materials</p></div></div></div>
+      <div class="gallery-item"><img src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/beibei-veronica-scaled.jpg" alt="Outdoor Learning - children playing and exploring nature at North Phoenix preschool" width="300" height="220"><div class="gallery-overlay"><div><h4>Outdoor Learning</h4><p>Building relationships through outdoor play and exploration</p></div></div></div>
+    </div>
+  </div>
