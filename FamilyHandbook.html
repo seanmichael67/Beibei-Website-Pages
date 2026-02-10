@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beibei Amigos Language Preschool - Family Handbook 2026</title>
+    <style>
+    /* Font Import */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    /* Divi Override Resets */
+    .et_pb_section, .et_pb_row, .et_pb_code { padding:0 !important; margin: 0 !important; }
+    .et_pb_row { max-width:100% !important; width:100% !important; }
+    
+    /* BRAND VARIABLES */
+    :root {
+      --color-primary: #1e40af;
+      --color-accent: #16a34a;
+      --color-highlight: #2563eb;
+      --color-bg: #f0f4f8;
+      --color-text: #374151;
+      --muted: #6b7280;
+      --bebei-green: #16a34a;
+      --radius-card: 40px;
+      --shadow-soft: 0 10px 40px -10px rgba(0,0,0,0.08);
+      --color-danger: #ef4444;
+      --color-warning: #f59e0b;
+    }
+
+    /* GLOBAL CONTAINER */
+    .bebei-landing-page * { margin: 0; padding: 0; box-sizing: border-box; }
+    .bebei-landing-page { 
+        font-family: 'Inter', sans-serif; 
+        line-height: 1.6; 
+        color: var(--color-text); 
+        background-color: var(--color-bg); 
+        background-image: radial-gradient(#dbeafe 2px, transparent 2px); 
+        background-size: 32px 32px; 
+        width: 100%; 
+        overflow-x: hidden; 
+        padding-bottom: 24px; 
+    }
+    .bebei-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    
+    /* GLOBAL SECTIONS */
+    .bebei-landing-page section { 
+        background: #fff; 
+        border-radius: var(--radius-card); 
+        margin: 32px 24px; 
+        overflow: hidden; 
+        box-shadow: var(--shadow-soft); 
+        border: 1px solid rgba(255,255,255,0.5); 
+        padding: 40px; 
+    }
+    @media (max-width: 768px) { 
+        .bebei-landing-page section { border-radius: 24px; margin: 16px 12px; padding: 24px; } 
+    }
+
+    /* BUTTONS */
+    .bebei-btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border-radius: 12px; font-weight: 700; text-decoration: none; transition: all 0.2s; cursor: pointer; border: none; font-size: 16px; min-height: 48px; }
+    .btn-primary { background: linear-gradient(135deg, var(--color-highlight), var(--color-accent)); color: white !important; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); }
+    .btn-primary:hover { opacity: 0.95; transform: translateY(-2px); }
+    .btn-outline { background: white; border: 2px solid var(--color-accent); color: var(--color-accent) !important; }
+    
+    /* TYPOGRAPHY */
+    .section-title { font-size: 2.5rem; font-weight: 800; color: var(--color-primary); text-align: center; margin-bottom: 16px; }
+    .section-subtitle { font-size: 1.25rem; color: var(--muted); text-align: center; max-width: 600px; margin: 0 auto 48px; }
+    h3 { font-size: 1.5rem; color: var(--color-primary); margin-bottom: 16px; margin-top: 24px; font-weight: 700; }
+    h4 { font-size: 1.1rem; color: var(--color-text); margin-bottom: 12px; font-weight: 600; }
+    p { margin-bottom: 16px; }
+    ul, ol { margin-bottom: 16px; padding-left: 24px; }
+    li { margin-bottom: 8px; }
+
+    /* UTILITY CLASSES (Grid & Cards) */
+    .hero { background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%); padding: 60px 0; border-radius: 0 0 var(--radius-card) var(--radius-card); margin-bottom: 32px; margin-top: 0 !important;}
+    .programs-grid, .science-grid, .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    @media (max-width: 1024px) { .programs-grid, .science-grid, .hero-grid, .testimonials-grid { grid-template-columns: 1fr; } }
+    
+    .info-card { background: white; border-radius: 16px; padding: 24px; margin-bottom: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid #f3f4f6; }
+    .info-card h3 { color: var(--color-primary); display: flex; align-items: center; gap: 12px; font-weight: 700; margin-bottom: 12px; margin-top: 0; font-size: 1.25rem; }
+    .info-card .icon { width: 40px; height: 40px; background: #eff6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+
+    /* Helper Styles for this content */
+    .highlight-box { border-left: 4px solid var(--color-accent); background-color: #f0fdf4; }
+    .warning-box { border-left: 4px solid var(--color-danger); background-color: #fef2f2; }
+    .important-box { border-left: 4px solid var(--color-highlight); background-color: #eff6ff; }
+    
+    /* Table Styling */
+    .table-responsive { overflow-x: auto; margin-bottom: 24px; }
+    table { width: 100%; border-collapse: collapse; min-width: 600px; }
+    th { background-color: var(--color-primary); color: white; padding: 16px; text-align: left; }
+    td { padding: 16px; border-bottom: 1px solid #e5e7eb; }
+    tr:nth-child(even) { background-color: #f9fafb; }
+    
+    /* Table of Contents Grid */
+    .toc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+    .toc-link { text-decoration: none; color: var(--color-primary); font-weight: 600; padding: 12px; background: #f0f9ff; border-radius: 8px; text-align: center; transition: 0.2s; }
+    .toc-link:hover { background: var(--color-primary); color: white; }
+    
+    /* Calendar Grid */
+    .calendar-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .calendar-month { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: #fff; }
+    .calendar-month h4 { color: var(--color-primary); border-bottom: 2px solid var(--color-accent); padding-bottom: 8px; text-align: center; }
+    .calendar-month ul { list-style: none; padding: 0; margin: 0; }
+    .calendar-month li { font-size: 0.9em; margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px dashed #f0f0f0; }
+    @media (max-width: 768px) { .calendar-grid { grid-template-columns: 1fr; } }
+
+    </style>
+</head>
+<body>
+
+<div class="bebei-landing-page">
+    
+    <div class="hero">
+        <div class="bebei-container">
+            <div class="hero-grid" style="align-items: center;">
+                <div>
+                    <h1 class="section-title" style="text-align: left;">Beibei Amigos</h1>
+                    <p style="font-size: 1.5rem; font-weight: 600; color: var(--color-primary);">Family Handbook 2026</p>
+                    <p style="margin-top: 16px;">Phoenix's only full immersion Mandarin, Spanish, and English preschool offering Montessori and Traditional programs.</p>
+                    <br>
+                    <a href="#welcome" class="bebei-btn btn-primary">Read Welcome Letter</a>
+                </div>
+                <div class="info-card">
+                    <h3>Contact Information</h3>
+                    <p><strong>Address:</strong> 751 E. Union Hills Dr. Ste. 19 Phoenix, AZ. 85024</p>
+                    <p><strong>Phone:</strong> 602-996-4990</p>
+                    <p><strong>Email:</strong> admin@beibeiamigos.com</p>
+                    <p><strong>Website:</strong> www.beibeiamigos.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bebei-container">
+        
+        <section>
+            <h2 class="section-title">Table of Contents</h2>
+            <div class="toc-grid">
+                <a href="#welcome" class="toc-link">Welcome Letter</a>
+                <a href="#philosophy" class="toc-link">Philosophy</a>
+                <a href="#programs" class="toc-link">Comparison</a>
+                <a href="#operations" class="toc-link">Operations</a>
+                <a href="#health" class="toc-link">Health & Wellness</a>
+                <a href="#financial" class="toc-link">Financial</a>
+                <a href="#safety" class="toc-link">Safety</a>
+                <a href="#education" class="toc-link">Education</a>
+                <a href="#partnerships" class="toc-link">Partnerships</a>
+                <a href="#family" class="toc-link">Family</a>
+                <a href="#calendar" class="toc-link">2026 Calendar</a>
+            </div>
+        </section>
+
+        <section id="welcome">
+            <h2 class="section-title">Welcome Letter</h2>
+            <p class="section-subtitle">A message from our Founder & Director</p>
+            
+            <p>Dear Families,</p>
+            <p>Welcome to Beibei Amigos Language Preschool. We are so grateful that you have chosen to partner with us in your child's early learning journey. At our school, we believe childhood is a precious time filled with curiosity, joy, and endless potential. It is our mission to nurture that potential in a warm, caring environment where children feel safe, respected, and inspired.</p>
+            
+            <p>My passion for language education began during my doctoral studies in bilingual education and deepened when my son was born. I wanted to give him the gift of languages and the confidence to thrive in an increasingly global world. That dream became the foundation for Beibei Amigos, a place where children learn Mandarin, Spanish, and English naturally, joyfully, and through meaningful daily experiences.</p>
+            
+            <p>As a father and an educator, I understand the hopes you carry for your child. Choosing a preschool is one of the most important decisions a family makes, and it is an honor to be a part of your child's early years. Here at Beibei Amigos, we strive to create a nurturing community where children build independence, kindness, curiosity, and confidence, all while developing strong multicultural awareness.</p>
+
+            <div class="info-card important-box">
+                <h3>Supporting Your Child's Success</h3>
+                <p>Together, we share the responsibility of supporting your child's growth. We kindly ask families to:</p>
+                <ul>
+                    <li>Bring your child to school on time and ready for the day (by 9:15am).</li>
+                    <li>Read with your child each day to build early literacy.</li>
+                    <li>Stay connected with school activities and events.</li>
+                </ul>
+            </div>
+            
+            <p>Communication is essential to your child's success. Please reach out anytime you have questions or concerns. We look forward to building a positive, warm partnership centered on your child's well-being and development.</p>
+            
+            <p><strong>Warmly,<br>Mr. Sean Michael Diana<br>Founder & Director</strong></p>
+        </section>
+
+        <section id="philosophy">
+            <h2 class="section-title">Educational Philosophy</h2>
+            <p class="section-subtitle">Language Immersion, Montessori, and Traditional Programs</p>
+            
+            <div class="programs-grid">
+                <div class="info-card">
+                    <div class="icon">🌏</div>
+                    <h3>Full Language Immersion</h3>
+                    <p>We are the only preschool in Phoenix offering full immersion in Mandarin Chinese, Spanish, and English. Children learn naturally through play, songs, and daily conversation.</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">🧩</div>
+                    <h3>Montessori Program</h3>
+                    <p>Our Montessori classrooms are peaceful, beautifully prepared learning environments. Children build independence and confidence through hands-on materials (Practical Life, Sensorial, Mathematics, Language, Cultural Studies).</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">🎨</div>
+                    <h3>Traditional Program</h3>
+                    <p>Following Arizona Early Learning Standards, this track focuses on play-based activities, structured lessons, group time, art, music, and social-emotional growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs">
+            <h2 class="section-title">Program Comparison</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Montessori Program</th>
+                            <th>Traditional Program</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Curriculum</strong></td>
+                            <td>Based on Montessori philosophy. Focus on independence, self-directed learning, hands-on materials.</td>
+                            <td>Guided by AZ Early Learning Standards. Focus on play-based learning, kindergarten readiness, teacher-led lessons.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Learning Approach</strong></td>
+                            <td>Child-centered; children choose activities matching their interests.</td>
+                            <td>Teacher-directed; structured lessons, group activities, and play centers.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pacing</strong></td>
+                            <td>Individualized progress with guidance from teachers.</td>
+                            <td>Children follow a class schedule aligned to age/developmental level.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Teacher's Role</strong></td>
+                            <td>Guides learning by observing and introducing new materials.</td>
+                            <td>Leads activities, provides direct instruction, and facilitates groups.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-card highlight-box">
+                <h3>Pre-K Language & Literacy Skills</h3>
+                <ul>
+                    <li><strong>Vocabulary:</strong> 1,500+ words, longer sentences, retelling stories.</li>
+                    <li><strong>Print Knowledge:</strong> Recognizes 10-20 letters, understands letters make sounds.</li>
+                    <li><strong>Phonological Awareness:</strong> Matches rhymes, claps syllables.</li>
+                    <li><strong>Pre-Writing:</strong> Writes some letters, uses "invented spelling," labels drawings.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="operations">
+            <h2 class="section-title">Daily Operations</h2>
+            
+            <div class="programs-grid">
+                <div class="info-card">
+                    <h3>Drop-off & Pick-up</h3>
+                    <ul>
+                        <li><strong>Open/Close:</strong> 7 AM - 6 PM.</li>
+                        <li><strong>Sign In/Out:</strong> Mandatory via system or Procare app.</li>
+                        <li><strong>Missing Signature Fee:</strong> $15 fee if staff has to call you to return to sign.</li>
+                        <li><strong>Late Pick-Up:</strong> Students must be picked up by 6:00 PM.</li>
+                    </ul>
+                </div>
+                <div class="info-card warning-box">
+                    <h3>Security Warning</h3>
+                    <p>Children will only be released to authorized persons listed in Procare. ID is required. Never share your unique PIN number.</p>
+                </div>
+            </div>
+            
+            <div class="info-card important-box">
+               <h3>Safety & Breakfast</h3>
+               <p>Children must finish breakfast before arriving at school. No food is permitted outdoors per state licensing. Closed-toe shoes are required for safety.</p>
+            </div>
+
+            <h3 style="margin-top: 30px;">Lunch Policy</h3>
+            <p>All lunches must be brought from home.</p>
+            <div class="info-card warning-box">
+                <h3>🚫 PEANUT AND TREE NUT-FREE ZONE</h3>
+                <p>We are a PEANUT AND TREE NUT-FREE center. Please read labels carefully (no peanut oil or nut oils). Sunflower butter is a great alternative.</p>
+            </div>
+            
+            <div class="info-card highlight-box">
+                <h3>⚠️ Bite-Size Food Requirements</h3>
+                <p>To prevent choking, please cut food into developmentally appropriate bite-size pieces:</p>
+                <ul>
+                    <li><strong>Carrots:</strong> Cooked soft, cut into thin matchsticks or shredded.</li>
+                    <li><strong>Grapes:</strong> Cut lengthwise into quarters.</li>
+                    <li><strong>Hotdogs:</strong> Cut lengthwise, then diced into small pieces.</li>
+                    <li><strong>Round Foods:</strong> Always cut into small, non-round shapes.</li>
+                </ul>
+                <p><em>Baby bottles are not permitted. All drinks must be in spill-proof sippy cups or water bottles.</em></p>
+            </div>
+
+            <div class="programs-grid">
+                 <div class="info-card">
+                    <h3>Diaper Care</h3>
+                    <p>Diapers are checked every 2 hours and changed immediately when soiled. Please provide at least 6 diapers/day for toddlers. <strong>Fee:</strong> $3.00 per diaper provided by school if you run out.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Toilet Learning</h3>
+                    <p><strong>Age Requirement:</strong> All 3-year-olds must be able to independently use the bathroom, ask for help, and clean themselves before transitioning to the next class.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="health">
+            <h2 class="section-title">Health & Wellness</h2>
+            
+            <div class="info-card important-box">
+                <h3>The 24-Hour Rule</h3>
+                <p>Any child showing signs of illness (Fever 100.4°F, Vomiting, Diarrhea, etc.) must be symptom-free for 24 hours without medication before returning. Antibiotics must be taken for at least 24 hours before returning.</p>
+            </div>
+            
+            <div class="info-card">
+                <h3>Daily Health Check</h3>
+                <p>We conduct a quick health check (skin rashes, temp, lethargy) when each child enters. Staff does not administer medication (including sunscreen/chapstick) without written consent.</p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="info-card">
+                    <h3>Immunizations</h3>
+                    <p>Proof of immunization is required per A.R.S. § 15-872. If claiming exemption, children may be excluded for up to 3 weeks during outbreaks (tuition still applies).</p>
+                </div>
+                <div class="info-card">
+                    <h3>Emergency Medical</h3>
+                    <p>In life-threatening situations (difficulty breathing, seizure, unconsciousness), we call 911 immediately, then parents. We call parents immediately for cuts requiring stitches, high fevers, etc.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="financial">
+            <h2 class="section-title">Financial Policies</h2>
+            <p><strong>Registration Fee:</strong> $300 (Non-refundable) | <strong>Supplies Fee:</strong> $70 Quarterly</p>
+            
+            <h3 style="text-align: center;">2025/2026 Tuition Schedule</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Program</th>
+                            <th>3 Half</th>
+                            <th>3 Full</th>
+                            <th>4 Half</th>
+                            <th>4 Full</th>
+                            <th>5 Half</th>
+                            <th>5 Full</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1 Year Old (Traditional Only)</strong></td>
+                            <td>$700</td>
+                            <td>$850</td>
+                            <td>$840</td>
+                            <td>$990</td>
+                            <td>$960</td>
+                            <td>$1,240</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2 Year Old Traditional</strong></td>
+                            <td>$670</td>
+                            <td>$830</td>
+                            <td>$820</td>
+                            <td>$960</td>
+                            <td>$950</td>
+                            <td>$1,170</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2 Year Old Montessori</strong></td>
+                            <td>$730</td>
+                            <td>$880</td>
+                            <td>$870</td>
+                            <td>$980</td>
+                            <td>$1,030</td>
+                            <td>$1,270</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Primary Montessori (3-5 yrs)</strong></td>
+                            <td>$660</td>
+                            <td>$820</td>
+                            <td>$800</td>
+                            <td>$940</td>
+                            <td>$940</td>
+                            <td>$1,150</td>
+                        </tr>
+                         <tr>
+                            <td><strong>Preschool Traditional (3-5 yrs)</strong></td>
+                            <td>$620</td>
+                            <td>$800</td>
+                            <td>$760</td>
+                            <td>$930</td>
+                            <td>$840</td>
+                            <td>$1,080</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="programs-grid">
+                <div class="info-card">
+                    <h3>Extended Care</h3>
+                    <p><strong>Hours:</strong> 7-9 AM and 4-6 PM.<br>
+                    <strong>Cost:</strong> $15/hr (as needed).<br>
+                    <strong>Without Notice:</strong> $26/hr + late fees if dropped off early/picked up late without notice.</p>
+                </div>
+                <div class="info-card warning-box">
+                    <h3>Late Policies</h3>
+                    <ul>
+                        <li><strong>Late Payment:</strong> $25 fee after the 5th.</li>
+                        <li><strong>Late Pick-up:</strong> $15 for first 15 mins, $5/min after.</li>
+                        <li><strong>Credits:</strong> No credits for sick days, holidays, or closures.</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 16px;"><strong>Tuition Increase:</strong> Yearly increment of 3-10% in January. <strong>Discounts:</strong> 10% sibling discount on lowest tuition.</p>
+        </section>
+
+        <section id="safety">
+            <h2 class="section-title">Safety & Security</h2>
+            <div class="programs-grid">
+                <div class="info-card">
+                    <h3>Building Access</h3>
+                    <p>Exterior doors secured with keypad entry. Codes are changed regularly. Never share codes with unauthorized individuals. Visitors must sign in.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Pest Control</h3>
+                    <p>Treated by licensed professionals as needed outside operational hours. Parents notified 72 hours prior.</p>
+                </div>
+            </div>
+            <div class="info-card highlight-box">
+                <h3>Cleaning Standards</h3>
+                <p>We follow a 3-step process: Clean (scrub), Rinse (water), Sanitize (approved solution with dwell time) following CDC guidelines.</p>
+            </div>
+        </section>
+
+        <section id="partnerships">
+            <h2 class="section-title">Education & Partnerships</h2>
+            
+            <div class="programs-grid">
+                <div class="info-card">
+                    <h3>First Things First Partner</h3>
+                    <p>We are a Quality First partner school, committed to high-quality early learning, lower ratios, and family support.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Assessment & Conferences</h3>
+                    <p>We use "Ages and Stages" and CDC Milestone Trackers. Formal parent-teacher conferences are held twice a year.</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 16px;">We accept DES and Quality First Scholarships. We use <strong>Procare</strong> for all billing and communication.</p>
+        </section>
+
+        <section id="family">
+            <h2 class="section-title">Family & General Policies</h2>
+            <div class="info-card">
+                <h3>Dismissal Policy</h3>
+                <p>Dismissal may occur if: Parents fail to honor payments, undermine school reputation (defamation/scenes), or if a child's needs are beyond our scope of care.</p>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <h2 class="section-title">2026 Calendar of Events</h2>
+            <div class="calendar-grid">
+                <div class="calendar-month">
+                    <h4>January</h4>
+                    <ul>
+                        <li><strong>1st:</strong> No School (New Year)</li>
+                        <li><strong>19th:</strong> No School (MLK Day)</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h4>February</h4>
+                    <ul>
+                        <li><strong>8th:</strong> Kite Day Event</li>
+                        <li><strong>16th:</strong> No School (Presidents Day)</li>
+                        <li><strong>17th:</strong> Chinese New Year</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h4>March</h4>
+                    <ul>
+                        <li><strong>2nd:</strong> Dr. Seuss Week</li>
+                        <li><strong>5th:</strong> Literacy Night</li>
+                        <li><strong>20th:</strong> Farm Day (Half Day/In-Service)</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h4>April</h4>
+                    <ul>
+                        <li><strong>3rd:</strong> No School (Good Friday)</li>
+                        <li><strong>10th:</strong> No School (PT Conferences)</li>
+                        <li><strong>23rd:</strong> Family Night</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h4>May</h4>
+                    <ul>
+                        <li><strong>1st:</strong> No School (Teacher In-Service)</li>
+                        <li><strong>8th:</strong> Mother's Day Event</li>
+                        <li><strong>25th:</strong> No School (Memorial Day)</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h4>June</h4>
+                    <ul>
+                        <li><strong>2nd:</strong> Welcome Summer Camp</li>
+                        <li><strong>14th:</strong> Summer Concert</li>
+                        <li><strong>18th:</strong> Father's Day Event</li>
+                        <li><strong>19th:</strong> No School</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h4>July</h4>
+                    <ul>
+                        <li><strong>3rd:</strong> No School (4th of July Obs.)</li>
+                        <li><strong>30th-31st:</strong> No School (Teacher In-Service)</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h4>August</h4>
+                    <ul>
+                        <li><strong>3rd:</strong> New School Year Begins</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h4>September</h4>
+                    <ul>
+                        <li><strong>4th:</strong> Grandparents Day</li>
+                        <li><strong>7th:</strong> No School (Labor Day)</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h4>October</h4>
+                    <ul>
+                        <li><strong>12th:</strong> No School (Columbus Day)</li>
+                        <li><strong>23rd:</strong> Trunk or Treat</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h4>November</h4>
+                    <ul>
+                        <li><strong>6th:</strong> No School (PT Conferences)</li>
+                        <li><strong>11th:</strong> No School (Veterans Day)</li>
+                        <li><strong>25th:</strong> Luncheon</li>
+                        <li><strong>26th-27th:</strong> No School (Thanksgiving)</li>
+                    </ul>
+                </div>
+                <div class="calendar-month">
+                    <h4>December</h4>
+                    <ul>
+                        <li><strong>17th:</strong> Winter Concert</li>
+                        <li><strong>24th:</strong> No School (Christmas Eve)</li>
+                        <li><strong>25th:</strong> No School (Christmas Day)</li>
+                        <li><strong>31st:</strong> No School (New Year's Eve)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+    <footer style="text-align: center; padding: 40px; color: var(--muted);">
+        <p>© 2026 Beibei Amigos Language Preschool</p>
+        <p>751 E. Union Hills Dr. Ste. 19 Phoenix, AZ. 85024</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
