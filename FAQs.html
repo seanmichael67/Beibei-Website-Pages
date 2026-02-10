@@ -1,0 +1,1036 @@
+<!-- ===========================
+Beibei Amigos FAQ (Divi Module)
+Paste into a Divi Code Module
+URL: https://www.beibeiamigos.com/FAQ
+=========================== -->
+
+<style>
+/* Import Divi Standard Font (Open Sans) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+/* Scoped styles to avoid conflicts with Divi/theme */
+#ba-faq-wrap {
+  /* Site Branding Colors */
+  --bg: #ffffff;
+  --card-bg: #f8f9fa; /* Light grey for contrast */
+  --text: #4c5866; /* Standard Divi Body Text Color */
+  --heading: #1e3a8a; /* Deep Blue Heading */
+  --brand: #2c4696; /* Beibei Primary Blue */
+  --brand-hover: #1a2e69;
+  --accent: #f59e0b; /* Warm accent (Orange) for calls to action */
+  --accent-hover: #d97706;
+  --border: #e6e9ed;
+  --shadow: 0 12px 18px -6px rgba(0,0,0,0.1);
+  
+  font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+}
+
+#ba-faq-wrap {
+  background: transparent; /* Let section background show */
+  color: var(--text);
+  line-height: 1.8em;
+}
+
+#ba-faq-wrap * {
+  box-sizing: border-box;
+}
+
+#ba-faq-wrap a {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#ba-faq-wrap a:hover {
+  color: var(--brand-hover);
+  text-decoration: underline;
+}
+
+#ba-faq-wrap .ba-container {
+  max-width: 1080px; /* Divi standard width */
+  margin: 0 auto;
+}
+
+/* Header with Logo & Name */
+#ba-faq-wrap .ba-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+}
+
+#ba-faq-wrap .ba-header-logo {
+  width: 80px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+#ba-faq-wrap .ba-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#ba-faq-wrap .ba-header-text strong {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--brand);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+#ba-faq-wrap .ba-header-text span {
+  font-size: 15px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+/* Header / Hero Area - Styled like Divi Page Title */
+#ba-faq-wrap .ba-hero {
+  background: var(--brand);
+  background: linear-gradient(135deg, #2c4696 0%, #0ea5e9 100%);
+  color: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(44, 70, 150, 0.2);
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+#ba-faq-wrap .ba-bc {
+  font-size: 12px;
+  margin-top: 0;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#ba-faq-wrap .ba-bc a {
+  color: #fff;
+}
+
+#ba-faq-wrap h1 {
+  margin: 10px 0 10px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+#ba-faq-wrap .ba-lede {
+  margin: 0;
+  opacity: 0.95;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Hero CTA specific overrides */
+#ba-faq-wrap .ba-hero .ba-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+  border-top: none;
+  padding-top: 0;
+}
+
+/* Grid Layout */
+#ba-faq-wrap .ba-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media(min-width: 981px) { /* Divi Desktop Breakpoint */
+  #ba-faq-wrap .ba-grid {
+    grid-template-columns: 320px 1fr;
+    align-items: start;
+  }
+}
+
+/* Cards */
+#ba-faq-wrap .ba-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px; /* Divi default radius */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+#ba-faq-wrap .ba-pad {
+  padding: 30px;
+}
+
+#ba-faq-wrap .ba-sectionTitle {
+  margin: 0 0 15px;
+  font-size: 14px;
+  color: var(--brand);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #edf2f7;
+  padding-bottom: 10px;
+}
+
+/* Sidebar Specifics */
+#ba-faq-wrap .ba-kv {
+  display: grid;
+  gap: 15px;
+}
+
+#ba-faq-wrap .ba-kv div {
+  display: grid;
+  gap: 4px;
+}
+
+#ba-faq-wrap .ba-kv b {
+  font-size: 12px;
+  color: #888;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#ba-faq-wrap .ba-kv span,
+#ba-faq-wrap .ba-kv a {
+  font-size: 16px;
+  color: #333;
+}
+
+#ba-faq-wrap .ba-cta {
+  display: grid;
+  gap: 15px;
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid var(--border);
+}
+
+/* UPDATED BUTTON STYLES 
+   Solid colors, shadows, and strong typography
+*/
+#ba-faq-wrap .ba-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 50px;
+  border: none;
+  background: #ccc; /* Fallback */
+  color: #fff !important; /* Force white text */
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+#ba-faq-wrap .ba-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+}
+
+/* Primary (Blue) */
+#ba-faq-wrap .ba-btn.ba-primary {
+  background: var(--brand);
+}
+
+#ba-faq-wrap .ba-btn.ba-primary:hover {
+  background: var(--brand-hover);
+}
+
+/* Accent (Orange) - Standard for "Enroll" */
+#ba-faq-wrap .ba-btn.ba-accent {
+  background: var(--accent);
+}
+
+#ba-faq-wrap .ba-btn.ba-accent:hover {
+  background: var(--accent-hover);
+}
+
+/* White (High Contrast for Header) */
+#ba-faq-wrap .ba-btn.ba-white {
+  background: #fff;
+  color: var(--brand) !important;
+}
+
+#ba-faq-wrap .ba-btn.ba-white:hover {
+  background: #f8fafc;
+  color: var(--brand-hover) !important;
+  box-shadow: 0 7px 14px rgba(0,0,0,0.2);
+}
+
+#ba-faq-wrap .ba-foot {
+  margin-top: 20px;
+  color: #888;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Search Input */
+#ba-faq-wrap .ba-search {
+  position: relative;
+}
+
+#ba-faq-wrap .ba-search input {
+  width: 100%;
+  min-height: 54px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 12px 20px;
+  font-size: 16px;
+  background: #fdfdfd;
+  color: #333;
+  transition: all 0.3s;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+#ba-faq-wrap .ba-search input:focus {
+  outline: none;
+  border-color: var(--brand);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(44, 70, 150, 0.1);
+}
+
+/* FAQ Category Styles */
+#ba-faq-wrap .ba-faq-category {
+  margin-bottom: 30px;
+}
+
+#ba-faq-wrap .ba-faq-category h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--brand);
+  padding: 15px 20px 10px;
+  margin: 0;
+  border-bottom: 2px solid var(--border);
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+/* FAQ List - Divi Accordion Style */
+#ba-faq-wrap .ba-faq {
+  padding: 0;
+}
+
+#ba-faq-wrap details {
+  border: 1px solid #eee;
+  margin-bottom: -1px; /* Collapse borders */
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+#ba-faq-wrap details:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#ba-faq-wrap details:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 0;
+}
+
+#ba-faq-wrap details:hover {
+  background: #fbfbfb;
+}
+
+#ba-faq-wrap details[open] {
+  background: #f8f9fa;
+  border-left: 3px solid var(--brand);
+}
+
+#ba-faq-wrap summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  padding-right: 50px;
+  transition: color 0.3s;
+}
+
+#ba-faq-wrap summary::-webkit-details-marker {
+  display: none;
+}
+
+#ba-faq-wrap summary:focus-visible {
+  outline: 2px solid var(--brand);
+  z-index: 2;
+}
+
+/* Divi Accordion Icon */
+#ba-faq-wrap summary::after {
+  content: '+';
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 300;
+  font-size: 24px;
+  color: #ccc;
+  transition: all 0.3s;
+}
+
+#ba-faq-wrap details[open] summary::after {
+  content: '-'; /* Or use '\2212' for minus sign */
+  transform: translateY(-50%) rotate(180deg);
+  color: var(--brand);
+}
+
+#ba-faq-wrap details[open] summary {
+  color: var(--brand);
+  font-weight: 700;
+}
+
+#ba-faq-wrap .ba-answer {
+  padding: 0 24px 24px 24px;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.8;
+  animation: baFadeIn 0.3s ease-in-out;
+}
+
+@keyframes baFadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#ba-faq-wrap .ba-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--brand);
+  background: rgba(255,255,255,0.9);
+  padding: 4px 12px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Map Section */
+#ba-faq-wrap .ba-map-section {
+  margin-top: 30px;
+}
+#ba-faq-wrap .ba-map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #eee;
+  height: 350px;
+  position: relative;
+}
+#ba-faq-wrap .ba-map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+#ba-faq-wrap .ba-map-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#ba-faq-wrap .ba-footer-copy {
+  margin-top: 40px;
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+}
+</style>
+
+<section id="ba-faq-wrap" aria-label="Beibei Amigos FAQ">
+  <div class="ba-container">
+
+    <!-- Brand Header -->
+    <div class="ba-header">
+      <img 
+        src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/ChatGPT-Image-Aug-18-2025-05_26_03-PM.png" 
+        alt="Beibei Amigos Logo" 
+        class="ba-header-logo"
+      >
+      <div class="ba-header-text">
+        <strong>Beibei Amigos Language Preschool</strong>
+        <span>Spanish & Mandarin Immersion • Phoenix, AZ</span>
+      </div>
+    </div>
+
+    <header class="ba-hero">
+      <div class="ba-bc" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span aria-hidden="true">/</span> <span>FAQs</span>
+      </div>
+
+      <div style="margin-top:10px; position: relative; z-index: 2;">
+        <span class="ba-badge">Parents Guide</span>
+        <h1>Frequently Asked Questions</h1>
+        <p class="ba-lede">
+          Everything you need to know about our Spanish & Mandarin immersion preschool.
+          Find answers about schedules, tuition, safety, and our curriculum.
+        </p>
+
+        <!-- New Header Buttons -->
+        <div class="ba-cta">
+            <a class="ba-btn ba-accent" href="/enroll/">Enroll Now</a>
+            <a class="ba-btn ba-white" href="/contact/">Book a Tour</a>
+            <a class="ba-btn ba-white" href="/tuition/">Tuition Rates</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="ba-grid">
+      <!-- Sidebar Info -->
+      <aside class="ba-card" aria-label="Quick info">
+        <div class="ba-pad">
+          <p class="ba-sectionTitle">Contact & Info</p>
+          <div class="ba-kv">
+            <div><b>Address</b><span>751 E. Union Hills Drive<br>Phoenix, AZ 85024</span></div>
+            <div><b>Phone</b><span><a href="tel:+16029964990">602-996-4990</a></span></div>
+            <div><b>Hours</b><span>Mon-Fri (Call for details)</span></div>
+            <div><b>Founded</b><span>2009</span></div>
+            <div><b>Ages</b><span>12 Mo - 5 Years</span></div>
+            <div><b>Programs</b><span>Spanish, Mandarin, English</span></div>
+          </div>
+
+          <div class="ba-cta">
+            <a class="ba-btn ba-accent" href="/enroll/">Enroll Now</a>
+            <a class="ba-btn ba-primary" href="/contact/">Book a Tour</a>
+            <a class="ba-btn ba-primary" href="/tuition/">Tuition Rates</a>
+          </div>
+
+          <p class="ba-foot">
+            <em>Questions about availability? Call us directly for the fastest response.</em>
+          </p>
+        </div>
+      </aside>
+
+      <!-- Main FAQ Content -->
+      <article class="ba-card" aria-label="Frequently Asked Questions">
+        <div class="ba-pad">
+          <p class="ba-sectionTitle">Search the Handbook</p>
+          <div class="ba-search" role="search">
+            <input id="baFaqSearch" type="search" inputmode="search" autocomplete="off"
+                   placeholder='Search topics (e.g., "lunch", "nap", "summer")' aria-label="Search FAQs">
+          </div>
+        </div>
+
+        <div class="ba-faq" id="baFaqList">
+
+          <!-- CATEGORY: GENERAL INFO -->
+          <div class="ba-faq-category">
+            <h3>General Information</h3>
+            
+            <details open data-q="hours schedule open monday friday">
+              <summary>What are your hours?</summary>
+              <div class="ba-answer">Beibei Amigos is open Monday through Friday. Program schedules may vary by classroom and age group. Please contact the school for current start and end times to see what fits your needs.</div>
+            </details>
+
+            <details data-q="address located union hills 85024 phoenix">
+              <summary>Where is the school located?</summary>
+              <div class="ba-answer">We are located at <strong>751 E. Union Hills Drive, Phoenix, AZ 85024</strong> (North Phoenix).</div>
+            </details>
+
+            <details data-q="phone number call contact">
+              <summary>What is your phone number?</summary>
+              <div class="ba-answer">You can reach our main office at <strong><a href="tel:+16029964990">602-996-4990</a></strong>.</div>
+            </details>
+
+            <details data-q="open since 2009 how long been open history">
+              <summary>How long has Beibei Amigos been open?</summary>
+              <div class="ba-answer">Beibei Amigos has been proudly serving families in the Valley since <strong>2009</strong>.</div>
+            </details>
+
+            <details data-q="licensed state license adhs">
+              <summary>Are you licensed?</summary>
+              <div class="ba-answer">Yes, we are a fully licensed preschool regulated by the <strong>Arizona Department of Health Services (ADHS)</strong> and adhere to all state safety and educational standards.</div>
+            </details>
+
+            <details data-q="sign in sign out attendance policy">
+              <summary>What is the sign-in/sign-out policy?</summary>
+              <div class="ba-answer">A parent or authorized adult must sign the child in and out daily using our digital system. This is a state requirement for safety and ratio tracking. If you forget to sign in/out, a missing signature fee of $15 may apply.</div>
+            </details>
+
+            <details data-q="late pick up early drop off fees">
+              <summary>Are there fees for late pick-up or early drop-off?</summary>
+              <div class="ba-answer">Yes. Non-contracted early drop-off or late pick-up (without notice) incurs a fee of $15 for the first 15 minutes and $5 for every minute thereafter to compensate staff.</div>
+            </details>
+
+            <details data-q="photo media social facebook pictures">
+              <summary>Do you take photos of the children?</summary>
+              <div class="ba-answer">Yes, we take photos for classroom use, the Procare app, and children's portfolios. With permission, photos may also be used for our website or social media to celebrate school activities.</div>
+            </details>
+
+            <details data-q="private school franchise owner">
+              <summary>Are you a franchise?</summary>
+              <div class="ba-answer">No. Beibei Amigos is a <strong>private, locally owned</strong> early childhood education school. We are not a franchise.</div>
+            </details>
+
+            <details data-q="founder sean michael diana elementary teacher administrator spain speaks spanish">
+              <summary>Who founded the school?</summary>
+              <div class="ba-answer">
+                Beibei Amigos was founded by <strong>Sean Michael Diana</strong>, a former elementary teacher and administrator.
+                Inspired by his time living in Spain and becoming fluent in Spanish, he opened Beibei Amigos to provide high-quality immersion education for his own son and the community.
+              </div>
+            </details>
+
+            <details data-q="handbook guide policies parents">
+               <summary>Do you have a family handbook?</summary>
+               <div class="ba-answer">Yes, all enrolled families receive a comprehensive Family Handbook detailing our policies, procedures, and helpful information for parents.</div>
+            </details>
+
+            <details data-q="holidays closed calendar schedule">
+               <summary>What holidays are you closed?</summary>
+               <div class="ba-answer">We are closed for major national holidays. A specific school calendar with all closure dates is provided to families upon enrollment.</div>
+            </details>
+
+            <details data-q="sister school arizona language preparatory alp elementary immersion">
+              <summary>Do you have an elementary school?</summary>
+              <div class="ba-answer">
+                Yes! Our sister school, <strong>Arizona Language Preparatory (ALP)</strong>, continues the immersion journey through elementary school.
+                <br><strong>Location:</strong> 6140 E Thunderbird Rd., Scottsdale, AZ 85254
+                <br><strong>Website:</strong> <a href="https://azlanguageprep.org/" target="_blank">azlanguageprep.org</a>
+              </div>
+            </details>
+          </div>
+
+          <!-- CATEGORY: ENROLLMENT & TUITION -->
+          <div class="ba-faq-category">
+            <h3>Enrollment & Tuition</h3>
+
+            <details data-q="ages teach toddler preschool 12 months 5 years">
+              <summary>What ages do you accept?</summary>
+              <div class="ba-answer">We serve children from <strong>12 months (walking toddlers)</strong> through <strong>5 years old</strong> (Pre-K).</div>
+            </details>
+
+            <details data-q="mid year enrollment start anytime">
+              <summary>Can my child enroll mid-year?</summary>
+              <div class="ba-answer">Yes! We accept enrollment year-round, provided there is space available in the specific age group/classroom.</div>
+            </details>
+
+            <details data-q="trial days transition visit">
+              <summary>Do you offer trial days?</summary>
+              <div class="ba-answer">Yes, trial or transition days can be arranged to help ensure a smooth adjustment for your child before their official start date.</div>
+            </details>
+
+            <details data-q="summer camp program june july">
+              <summary>Do you have a summer camp?</summary>
+              <div class="ba-answer">Yes, we offer a fun and engaging summer program to keep language skills sharp and children active during the summer months.</div>
+            </details>
+            
+            <details data-q="after school care program">
+              <summary>Do you have an after-school program?</summary>
+              <div class="ba-answer">Availability for after-school programs may vary. Please contact the office for the most current information regarding extended care options.</div>
+            </details>
+
+            <details data-q="half day full day three half days five full days program">
+              <summary>Do you offer part-time or half-day options?</summary>
+              <div class="ba-answer">Yes. Enrollment options range from <strong>three half-days</strong> per week up to <strong>five full days</strong> per week to suit your family's schedule.</div>
+            </details>
+
+            <details data-q="tuition paid monthly weekly plans procare cost">
+              <summary>How much is tuition and how do I pay?</summary>
+              <div class="ba-answer">
+                Tuition varies based on the age of the child and the schedule chosen. Payments are made <strong>monthly</strong> via the <strong>Procare app</strong>.
+                We can arrange weekly payment plans upon request. <a href="/tuition/">View our tuition page</a> for more details.
+              </div>
+            </details>
+
+            <details data-q="additional fees registration supply">
+              <summary>Are there other fees besides tuition?</summary>
+              <div class="ba-answer">Yes. There is a one-time non-refundable Registration Fee of $300 at enrollment. There is also a quarterly Supply Fee of $70 (billed Jan, Apr, July, Oct) to cover classroom materials.</div>
+            </details>
+
+            <details data-q="sibling discount family discount">
+              <summary>Do you offer a sibling discount?</summary>
+              <div class="ba-answer">Yes! Families receive a <strong>10% discount</strong> on the lowest tuition rate when enrolling more than one child.</div>
+            </details>
+
+            <details data-q="credit card fee payment method">
+              <summary>Is there a fee for credit card payments?</summary>
+              <div class="ba-answer">Yes, credit/debit card transactions incur a 3.5% processing fee. We recommend using ACH (bank transfer), check, or cash to avoid this fee.</div>
+            </details>
+
+            <details data-q="des accept childcare assistance">
+              <summary>Do you accept DES assistance?</summary>
+              <div class="ba-answer">Yes, we are an approved provider for <strong>DES childcare assistance</strong>.</div>
+            </details>
+
+            <details data-q="esa scholarship programs">
+              <summary>Do you accept ESA?</summary>
+              <div class="ba-answer">Please contact our office directly to discuss ESA funding and current scholarship program availability.</div>
+            </details>
+
+            <details data-q="military discount">
+              <summary>Is there a military discount?</summary>
+              <div class="ba-answer">Yes, we offer discounts for military families. Thank you for your service!</div>
+            </details>
+
+            <details data-q="teacher discount educator">
+              <summary>Is there a discount for teachers?</summary>
+              <div class="ba-answer">Yes, we offer special discounts for fellow educators.</div>
+            </details>
+
+            <details data-q="vacation offer vacations break">
+              <summary>Do you offer vacation weeks?</summary>
+              <div class="ba-answer">No, we do not offer credit for vacation weeks. Tuition holds your child's spot in the class.</div>
+            </details>
+
+            <details data-q="withdraw cancellation policy notice">
+              <summary>What is the withdrawal policy?</summary>
+              <div class="ba-answer">A written notice must be provided at least <strong>2 weeks prior</strong> to withdrawal. Families are responsible for tuition during this notice period.</div>
+            </details>
+
+            <details data-q="tour schedule tour before first day visit">
+              <summary>Can I visit the school first?</summary>
+              <div class="ba-answer">Absolutely. We strongly encourage you to <strong>schedule a tour</strong>. It's the best way to meet the teachers and see if Beibei Amigos is the right fit for your family.</div>
+            </details>
+          </div>
+
+          <!-- CATEGORY: DAILY LIFE -->
+          <div class="ba-faq-category">
+            <h3>Daily Life</h3>
+            
+            <details data-q="nap naps where do they nap sleep">
+              <summary>Do children take naps?</summary>
+              <div class="ba-answer">Yes. All full-day children have a supervised rest/nap time. Naps take place <strong>inside the classroom</strong> on individual mats in a calm, quiet environment.</div>
+            </details>
+
+            <details data-q="potty training requirements 3 year old">
+              <summary>Does my child need to be potty trained?</summary>
+              <div class="ba-answer">Children entering the 3-year-old classroom must be fully potty trained (able to use the toilet independently). For younger children, we partner with families on toilet learning when the child shows signs of readiness.</div>
+            </details>
+
+            <details data-q="diapers wipes supply fee">
+              <summary>Do I need to provide diapers?</summary>
+              <div class="ba-answer">Yes. Parents of children in diapers must provide diapers and wipes (labeled with the child's name). If a child runs out, the school will provide them for a fee ($3/diaper, $5/wipes pack) after notification.</div>
+            </details>
+
+            <details data-q="toys from home personal items">
+              <summary>Can my child bring toys from home?</summary>
+              <div class="ba-answer">Generally, no. We ask that personal toys stay at home to prevent loss or conflict. Exceptions may be made for "Show and Tell" days or a small soft comfort item for nap time (no hard plastic parts).</div>
+            </details>
+
+            <details data-q="recess outside playground how often">
+              <summary>How often do children go outside?</summary>
+              <div class="ba-answer">Weather permitting, children enjoy multiple outdoor recess times daily to play, run, and develop gross motor skills.</div>
+            </details>
+
+            <details data-q="bathrooms toilets potty training small">
+              <summary>Do the bathrooms have small toilets?</summary>
+              <div class="ba-answer">Yes, our facilities are designed for young children and are equipped with age-appropriate, child-sized toilets and sinks to encourage independence.</div>
+            </details>
+
+            <details data-q="performances songs holiday shows">
+              <summary>Do you have performances?</summary>
+              <div class="ba-answer">Yes! We host cultural and holiday performances where children sing songs and perform in Spanish and Mandarin, giving them a chance to showcase their language skills.</div>
+            </details>
+
+            <details data-q="parents night out events evening">
+              <summary>Do you have Parents' Night Out?</summary>
+              <div class="ba-answer">We occasionally offer Parents' Night Out events where children can enjoy fun activities at the school while parents have an evening off. Check our calendar for dates!</div>
+            </details>
+
+            <details data-q="lunch bring lunch water bottle each day food">
+              <summary>Is lunch provided?</summary>
+              <div class="ba-answer">No, parents provide lunch. Please pack a healthy <strong>lunch</strong> and a <strong>water bottle</strong> for your child each day.</div>
+            </details>
+
+            <details data-q="snacks provide snacks">
+              <summary>Do you provide snacks?</summary>
+              <div class="ba-answer">Yes, the school provides healthy snacks during the day.</div>
+            </details>
+
+             <details data-q="supplies bring items">
+              <summary>What supplies should I bring?</summary>
+              <div class="ba-answer">Generally, you will need to bring a lunch, water bottle, change of clothes, and bedding for nap time (if full day). A specific supply list for your child's age group will be provided upon enrollment.</div>
+            </details>
+          </div>
+
+          <!-- CATEGORY: HEALTH & SAFETY -->
+          <div class="ba-faq-category">
+            <h3>Health & Safety</h3>
+
+            <details data-q="medication policy sunscreen lotion">
+              <summary>Can you administer medication?</summary>
+              <div class="ba-answer">Staff can only administer medication for chronic conditions (like asthma/epi-pens) with a care plan. We do not apply over-the-counter items like sunscreen, lotion, or bug spray; please apply these before school.</div>
+            </details>
+
+            <details data-q="immunization vaccines policy">
+              <summary>Are immunizations required?</summary>
+              <div class="ba-answer">Yes, up-to-date immunization records are required for enrollment. We follow the ADHS schedule. Exemptions are accepted with proper legal documentation, though unimmunized children may be excluded during outbreaks.</div>
+            </details>
+
+            <details data-q="health check daily illness">
+              <summary>Do you do health checks?</summary>
+              <div class="ba-answer">Yes, we conduct a quick visual health check upon arrival each day to ensure every child is well enough to participate and to protect the health of the group.</div>
+            </details>
+
+            <details data-q="pest control safe chemicals">
+              <summary>Do you use pest control?</summary>
+              <div class="ba-answer">Yes, for safety and sanitation, licensed professionals treat the facility as needed outside of school hours. We use child-safe products and parents are notified 72 hours in advance of routine treatments.</div>
+            </details>
+
+            <details data-q="nut free allergies food allergies safety">
+              <summary>How do you handle food allergies?</summary>
+              <div class="ba-answer">We are a <strong>nut-free campus</strong>. For other allergies, we work closely with parents to document medical needs and ensure all staff are aware of safety protocols.</div>
+            </details>
+
+            <details data-q="discipline policy behavior redirection">
+              <summary>What is the discipline policy?</summary>
+              <div class="ba-answer">We practice positive guidance and redirection. Our goal is to teach social-emotional skills, helping children understand feelings and resolve conflicts constructively rather than using punishment.</div>
+            </details>
+
+            <details data-q="biting policy toddlers behavior">
+              <summary>What do you do when a child bites?</summary>
+              <div class="ba-answer">Biting can be a developmental phase for toddlers. We address it by comforting the bitten child and firmly but gently redirecting the biter. We work closely with parents to identify triggers and prevent recurrence.</div>
+            </details>
+            
+            <details data-q="ratios teacher student ratio">
+              <summary>What are the teacher ratios?</summary>
+              <div class="ba-answer">We strictly adhere to or exceed the state-mandated teacher-to-child ratios for every age group to ensure safety and individual attention.</div>
+            </details>
+
+            <details data-q="safe security door code drop off pick up">
+              <summary>What is your security policy?</summary>
+              <div class="ba-answer">Student safety is our top priority. We utilize a <strong>coded door entry system</strong> and have strict procedures for supervised drop-off and pick-up to ensure only authorized persons can access the facility.</div>
+            </details>
+
+            <details data-q="sick policy child sick during day illness">
+              <summary>What if my child gets sick at school?</summary>
+              <div class="ba-answer">If a child becomes ill during the day, we will contact parents immediately. We ask that you pick up your child promptly to maintain a healthy environment for all students.</div>
+            </details>
+          </div>
+
+          <!-- CATEGORY: CURRICULUM & STAFF -->
+          <div class="ba-faq-category">
+            <h3>Curriculum & Staff</h3>
+
+            <details data-q="curriculum learn art music songs montessori traditional choice">
+              <summary>What is the curriculum?</summary>
+              <div class="ba-answer">We offer families a choice between two distinct learning tracks: <strong>Montessori</strong> (child-led, hands-on) or <strong>Traditional</strong> (play-based, teacher-led). Both programs integrate full Spanish and Mandarin immersion with art, music, math, and literacy concepts.</div>
+            </details>
+            
+            <details data-q="immersion definition what is">
+              <summary>What is language immersion?</summary>
+              <div class="ba-answer">Immersion means that the foreign language (Spanish or Mandarin) is the medium of instruction, not just a subject. Teachers speak to the children in the target language throughout the day, helping them learn it as naturally as they learn their first language.</div>
+            </details>
+
+            <details data-q="montessori method traditional difference">
+              <summary>What is Montessori?</summary>
+              <div class="ba-answer">Our Montessori track follows the philosophy of Maria Montessori, emphasizing child-led activities, independence, and hands-on learning materials, all conducted within our language immersion environment.</div>
+            </details>
+
+            <details data-q="speaking another language at home">
+              <summary>What if my child starts speaking another language to me?</summary>
+              <div class="ba-answer">This is a great sign! It means the immersion is working. Even if you don't speak the language, encourage them. Let them "teach" you words—it boosts their confidence and reinforces their learning.</div>
+            </details>
+
+            <details data-q="teachers certified montessori certified cda ece degrees">
+              <summary>What certifications do your teachers have?</summary>
+              <div class="ba-answer">Our teaching staff is highly qualified. <strong>Montessori teachers</strong> are fully Montessori-certified. <strong>Traditional classroom teachers</strong> hold CDA (Child Development Associate) credentials or ECE (Early Childhood Education) degrees.</div>
+            </details>
+
+            <details data-q="mandarin teachers seven years staff longevity retention">
+              <summary>How is the teacher retention?</summary>
+              <div class="ba-answer">We are proud of our low turnover. Many of our Mandarin teachers have been with Beibei Amigos for <strong>over 7 years</strong>, providing a stable and loving environment for the children.</div>
+            </details>
+
+            <details data-q="how many teachers fourteen spanish mandarin teachers">
+              <summary>How many language teachers do you have?</summary>
+              <div class="ba-answer">We currently have <strong>14 dedicated Spanish and Mandarin teachers</strong>, in addition to support staff.</div>
+            </details>
+
+            <details data-q="languages taught spanish mandarin english immersion curriculum">
+              <summary>How does the language immersion work?</summary>
+              <div class="ba-answer">Children are immersed in <strong>Spanish, Mandarin, and English</strong> throughout the day. Teachers use the target languages during play, circle time, songs, and instruction, helping children acquire language naturally.</div>
+            </details>
+
+            <details data-q="need speak spanish mandarin already experience">
+              <summary>Does my child need to know Spanish or Mandarin to enroll?</summary>
+              <div class="ba-answer">Not at all! <strong>No prior language experience is required.</strong> Our program is designed to teach children regardless of their home language.</div>
+            </details>
+
+            <details data-q="only spanish only mandarin enroll single language">
+              <summary>Can I choose just one language (e.g., only Spanish)?</summary>
+              <div class="ba-answer">No. Our unique trilingual model is designed to expose all children to Spanish, Mandarin, and English. We believe this broad exposure is best for brain development.</div>
+            </details>
+
+            <details data-q="english teachers teach">
+              <summary>Do the teachers teach English?</summary>
+              <div class="ba-answer">Yes, English is part of the curriculum to ensure children are prepared for Kindergarten standards, but the primary focus of our unique program is on Spanish and Mandarin acquisition.</div>
+            </details>
+
+            <details data-q="communication procare email phone reach teacher photos reports">
+              <summary>How will I know how my child is doing?</summary>
+              <div class="ba-answer">We use the <strong>Procare app</strong> to send daily updates, photos, and messages. You can also communicate via email or phone, and we are always happy to discuss your child's progress.</div>
+            </details>
+
+            <details data-q="conferences parent teacher conferences">
+              <summary>Are there parent-teacher conferences?</summary>
+              <div class="ba-answer">Yes, we schedule conferences to discuss development milestones and answer any specific questions you have about your child's learning.</div>
+            </details>
+
+            <details data-q="prepare for kindergarten readiness academic">
+              <summary>Is this a play-based or academic program?</summary>
+              <div class="ba-answer">It is a balance of both. We prepare children for Kindergarten by building foundations in literacy, math, and social skills (sharing, independence, problem-solving), all while they learn new languages.</div>
+            </details>
+
+            <details data-q="different from other preschools why beibei">
+              <summary>Why choose Beibei Amigos?</summary>
+              <div class="ba-answer">We offer a rare combination: true trilingual immersion (Spanish/Mandarin/English), flexible schedules, and a choice between Montessori or Traditional learning styles, all led by experienced educators who truly care.</div>
+            </details>
+
+            <details data-q="separation anxiety support cry">
+              <summary>My child has separation anxiety. How do you help?</summary>
+              <div class="ba-answer">This is very common! Our teachers are trained to handle separation anxiety with patience and love. We establish consistent drop-off routines and use distraction and engagement to help them feel safe and happy quickly.</div>
+            </details>
+          </div>
+
+        </div>
+      </article>
+    </div>
+
+    <!-- Map Section -->
+    <div class="ba-map-section ba-card">
+      <div class="ba-pad">
+        <p class="ba-sectionTitle">Visit Our Campus</p>
+        <div class="ba-map-container">
+          <!-- Embed Google Map for 751 E Union Hills Dr, Phoenix, AZ 85024 -->
+          <iframe
+            title="Map of Beibei Amigos Language Preschool"
+            src="https://maps.google.com/maps?q=751+E+Union+Hills+Dr,+Phoenix,+AZ+85024&t=&z=12&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="ba-map-actions">
+          <a class="ba-btn ba-primary" href="https://www.google.com/maps/dir//751+E+Union+Hills+Dr,+Phoenix,+AZ+85024" target="_blank" rel="noopener">
+            Get Directions to School
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ba-footer-copy">
+      © <span id="baFaqYear"></span> Beibei Amigos Language Preschool • Phoenix, AZ
+    </div>
+
+  </div>
+</section>
+
+<script>
+/* Lightweight FAQ search (fast INP). No libraries. */
+(() => {
+  const $ = s => document.querySelector(s);
+  const i = $("#baFaqSearch");
+  const list = $("#baFaqList");
+
+  if (!i || !list) return;
+
+  const categories = [...list.querySelectorAll(".ba-faq-category")];
+  const items = [...list.querySelectorAll("details")];
+  const norm = t => (t || "").toLowerCase().trim();
+  let raf = 0;
+
+  function run() {
+    const q = norm(i.value);
+    
+    // 1. Show/Hide individual questions
+    items.forEach(d => {
+      const hay = norm(d.getAttribute("data-q")) + " " +
+                  norm(d.querySelector("summary")?.textContent) + " " +
+                  norm(d.querySelector(".ba-answer")?.textContent);
+      d.style.display = (!q || hay.includes(q)) ? "" : "none";
+    });
+
+    // 2. Hide entire category if all its questions are hidden
+    categories.forEach(cat => {
+      const children = [...cat.querySelectorAll("details")];
+      const hasVisible = children.some(c => c.style.display !== "none");
+      cat.style.display = hasVisible ? "" : "none";
+    });
+
+    raf = 0;
+  }
+
+  i.addEventListener("input", () => {
+    if (raf) cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(run);
+  });
+
+  const y = $("#baFaqYear");
+  if (y) y.textContent = new Date().getFullYear();
+})();
+</script>
+
+<!-- ===========================
+Structured Data: LocalBusiness + BreadcrumbList + FAQPage
+Update only if your FAQ URL changes.
+=========================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "Preschool"],
+      "@id": "https://www.beibeiamigos.com/#beibei",
+      "name": "Beibei Amigos Language Preschool",
+      "url": "https://www.beibeiamigos.com/",
+      "telephone": "+1-602-996-4990",
+      "hasMap": "https://maps.app.goo.gl/9yFRjUBrNZs4Uo3R8",
+      "foundingDate": "2009",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "751 E. Union Hills Drive",
+        "addressLocality": "Phoenix",
+        "addressRegion": "AZ",
+        "postalCode": "85024",
+        "addressCountry": "US"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Sean Michael Diana",
+        "description": "Former elementary teacher and administrator. Opened Beibei Amigos after living in Spain and becoming fluent in Spanish."
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.beibeiamigos.com/FAQ#breadcrumbs",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.beibeiamigos.com/" },
+        { "@type": "ListItem", "position": 2, "name": "FAQs", "item": "https://www.beibeiamigos.com/FAQ" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.beibeiamigos.com/FAQ#faqpage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What are your hours?", "acceptedAnswer": { "@type": "Answer", "text": "Beibei Amigos is open Monday through Friday. Program schedules may vary by classroom and age group. Please contact the school for current start and end times." } },
+        { "@type": "Question", "name": "What ages do you teach?", "acceptedAnswer": { "@type": "Answer", "text": "We serve children from 12 months (walking toddlers) through 5 years old." } },
+        { "@type": "Question", "name": "What is your address?", "acceptedAnswer": { "@type": "Answer", "text": "751 E. Union Hills Drive, Phoenix, AZ 85024." } },
+        { "@type": "Question", "name": "What is your phone number?", "acceptedAnswer": { "@type": "Answer", "text": "602-996-4990." } },
+        { "@type": "Question", "name": "How long have you been open?", "acceptedAnswer": { "@type": "Answer", "text": "Beibei Amigos has been open since 2009." } },
+        { "@type": "Question", "name": "Do you offer half-day programs?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Half-day enrollment starts at three half days per week and is available up to five full days per week." } },
+        { "@type": "Question", "name": "How is tuition paid?", "acceptedAnswer": { "@type": "Answer", "text": "Tuition is paid monthly through the Procare application. Weekly payment plans can be provided upon request." } },
+        { "@type": "Question", "name": "Do you accept DES childcare assistance?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, we accept DES childcare assistance." } },
+        { "@type": "Question", "name": "Do you provide lunch?", "acceptedAnswer": { "@type": "Answer", "text": "Parents provide lunch each day." } },
+        { "@type": "Question", "name": "What should my child bring each day?", "acceptedAnswer": { "@type": "Answer", "text": "Please bring a lunch and a water bottle each day, plus any age-specific items if applicable." } },
+        { "@type": "Question", "name": "What security measures are in place at drop-off and pick-up?", "acceptedAnswer": { "@type": "Answer", "text": "We use controlled building access, including a door code at the entrance, and supervised drop-off and pick-up procedures." } },
+        { "@type": "Question", "name": "Do you have a sister school?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our sister school is Arizona Language Preparatory, 6140 E Thunderbird Rd., Scottsdale, AZ 85254. Phone: 602-996-7595. Website: https://azlanguageprep.org/" } }
+      ]
+    }
+  ]
+}
+</script>
