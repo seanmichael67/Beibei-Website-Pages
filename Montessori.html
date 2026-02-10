@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Phoenix Preschool - BeiBei Amigos Language Preschool</title>
+    
+    <!-- Meta tags from Montessori File -->
+    <meta name="description" content="Trilingual Montessori preschool in North Phoenix. Serving Deer Valley, Desert Ridge, Norterra, Moon Valley, Tatum Ranch, Aviano, and Paradise Valley.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Fonts: Inter (Requested from New File) + FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- JSON-LD Schema Markup for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Preschool",
+      "name": "BeiBei Amigos Language Preschool",
+      "description": "Trilingual Montessori preschool in North Phoenix offering Spanish and Mandarin immersion for toddlers and preschoolers.",
+      "image": "https://www.beibeiamigos.com/wp-content/uploads/2025/12/Prof_Maria_Montessori.jpg",
+      "@id": "https://www.beibeiamigos.com",
+      "url": "https://www.beibeiamigos.com/preschool-phoenix/",
+      "telephone": "+16029964990",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "751 E Union Hills Dr",
+        "addressLocality": "Phoenix",
+        "addressRegion": "AZ",
+        "postalCode": "85024",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.655,
+        "longitude": -112.065
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "07:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/beibeiamigos",
+        "https://www.instagram.com/beibeiamigos"
+      ]
+    }
+    </script>
+
+    <style>
+        /* --- 1. NEW CSS VARIABLES & RESET (Prioritized) --- */
+        :root {
+            /* New Palette */
+            --primary-blue: #2563eb;       /* Brighter Blue */
+            --primary-blue-light: #38bdf8; /* Sky Blue */
+            --navy: #1e3a8a;               /* Deep Navy (replaces old primary-blue) */
+            --bg-light: #f9fbfd;
+            --text-main: #1f2937;
+            --text-muted: #6b7280;
+            --accent-yellow: #facc15;
+            --card-bg: #ffffff;
+            --border-light: #e5e7eb;
+            
+            /* Legacy/Action Colors preserved for buttons */
+            --primary-red: #D32F2F; 
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Scoped to prevent overwriting WordPress theme globals if possible, 
+           but kept general for Divi module ease of use */
+        .page-wrapper {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .page-wrapper h1, 
+        .page-wrapper h2, 
+        .page-wrapper h3, 
+        .page-wrapper h4 {
+            color: var(--navy);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .page-wrapper a {
+            text-decoration: none;
+            color: var(--primary-blue);
+            transition: all 0.3s ease;
+        }
+
+        .page-wrapper a:hover {
+            text-decoration: none;
+            color: var(--navy);
+        }
+
+        .page-wrapper .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        /* --- 2. BUTTONS (Merged Styles) --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+            border: none;
+            
+            /* Unified White Style for ALL buttons */
+            background-color: #ffffff;
+            color: var(--navy);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15); /* Shadow helps visibility on white backgrounds */
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            background-color: #f8fafc; /* Slight off-white hover */
+            color: var(--primary-blue);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
+
+        /* Force specific classes to match the unified white style */
+        .btn-enroll, 
+        .btn-primary, 
+        .btn-primary-dark, 
+        .btn-secondary, 
+        .btn-outline {
+            background-color: #ffffff;
+            color: var(--navy);
+            border: none;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        /* --- 3. HERO SECTION (From New File) --- */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
+            color: #ffffff;
+            border-radius: 0 0 32px 32px;
+            padding: 64px 5% 80px; /* Changed 16px to 5% for equal side padding */
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
+            gap: 32px;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.2);
+            margin-bottom: 16px;
+        }
+
+        .hero-tag span {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .hero-title {
+            font-size: 2.4rem;
+            color: white !important; /* Force white for WordPress override */
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            max-width: 580px;
+            margin-bottom: 20px;
+            color: #f0f9ff;
+        }
+
+        .hero-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .hero-pill {
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.2);
+            font-size: 0.85rem;
+        }
+
+        .hero-main-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 40px; /* Increased padding to make box larger */
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            text-align: center; /* Center text for better layout with large image */
+        }
+
+        /* NEW: Style for Maria Montessori Image */
+        .hero-main-card img.maria-photo {
+            width: 250px; /* Increased size significantly */
+            height: 250px;
+            border-radius: 12px;
+            object-fit: contain;
+            margin: 0 auto 24px auto; /* Centered image */
+            border: 4px solid rgba(255, 255, 255, 0.4);
+            display: block;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .hero-main-card h3 {
+            color: #ffffff !important;
+            font-size: 1.6rem; /* Increased font size */
+            margin-bottom: 16px;
+        }
+
+        .hero-main-card p {
+            color: #f0f9ff;
+            font-size: 1.1rem; /* Increased font size */
+            line-height: 1.7;
+        }
+
+        .hero-badge {
+            position: absolute;
+            right: -6px;
+            bottom: -10px;
+            background: var(--accent-yellow);
+            color: #92400e;
+            padding: 10px 16px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            box-shadow: 0 12px 24px rgba(15, 23, 42, 0.35);
+        }
+
+        /* --- 4. CONTENT SECTIONS (Merged Layouts) --- */
+        .page-wrapper section {
+            padding: 60px 5%; /* Added 5% horizontal padding to all sections */
+            max-width: 1200px; /* Ensure content doesn't get too wide on huge screens */
+            margin-left: auto;  /* Center the section content */
+            margin-right: auto; /* Center the section content */
+        }
+        
+        /* Exception for Hero which handles its own width/centering differently to keep background full width if needed */
+        .page-wrapper section.hero {
+            max-width: 100%; 
+            padding: 64px 5% 80px;
+        }
+
+        .section-heading {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+        
+        .section-heading h2 {
+            font-size: 2rem;
+            color: var(--navy);
+        }
+
+        /* Grid System from New File */
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.3fr);
+            gap: 32px;
+            align-items: start;
+        }
+
+        .philosophy-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid var(--border-light);
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+        }
+
+        .philosophy-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .philosophy-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .philosophy-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary-blue);
+            margin-top: 8px;
+            flex-shrink: 0;
+        }
+
+        /* Five Areas Grid */
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .area-card {
+            background: var(--card-bg);
+            border-radius: 18px;
+            padding: 20px;
+            border: 1px solid var(--border-light);
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+            transition: transform 0.2s;
+        }
+        .area-card:hover { transform: translateY(-4px); }
+
+        .area-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .area-title { font-size: 1.1rem; margin-bottom: 8px; }
+        .area-body { font-size: 0.9rem; color: var(--text-muted); }
+
+        /* Works Section */
+        .works-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+        }
+
+        .works-highlight {
+            background: #eff6ff;
+            border-radius: 18px;
+            padding: 24px;
+            border: 1px solid #dbeafe;
+        }
+        
+        /* Teachers Grid */
+        .teachers-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        
+        .teacher-card {
+            background: var(--card-bg);
+            border-radius: 18px;
+            padding: 24px;
+            border: 1px solid var(--border-light);
+            text-align: center;
+        }
+        
+        .teacher-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            background-color: #e2e8f0;
+        }
+
+        .teacher-lang {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-transform: uppercase;
+            background: #eff6ff;
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+
+        /* General Layout (Admissions/Facilities) */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-top: 40px;
+        }
+        
+        .image-block img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        /* Facilities (Features) - FIXED LAYOUT */
+        .features-grid {
+            display: flex; /* Changed from grid to flex for better control */
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 18px;
+            border: 1px solid var(--border-light);
+            /* border-top value is set inline in HTML */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Stronger shadow */
+            flex: 1 1 300px; /* Grow, shrink, basis */
+            max-width: 350px; /* Prevent them from getting too wide */
+            width: 100%; /* Ensure responsiveness */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-light);
+        }
+        .faq-item h4 { margin-bottom: 8px; font-size: 1.1rem; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* CTA Strip */
+        .cta-section-strip {
+            background: var(--navy);
+            color: white;
+            padding: 60px 16px;
+            text-align: center;
+            border-radius: 24px;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+
+        /* Map Section */
+        .map-section {
+            margin-bottom: 60px;
+        }
+        
+        .map-container {
+            width: 100%;
+            height: 450px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+            border: 1px solid var(--border-light);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* --- RESPONSIVE MEDIA QUERIES --- */
+        @media (max-width: 1024px) {
+            .areas-grid { grid-template-columns: repeat(2, 1fr); }
+            .areas-grid .area-card:last-child { grid-column: span 2; }
+        }
+
+        @media (max-width: 768px) {
+            .hero-inner, .grid-2, .philosophy-grid, .works-wrapper { grid-template-columns: 1fr; }
+            .teachers-grid { grid-template-columns: 1fr; }
+            .areas-grid .area-card:last-child { grid-column: auto; }
+            .hero-buttons { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="page-wrapper">
+
+        <!-- NEW HERO SECTION (With Updated Text & Buttons) -->
+        <section class="hero">
+            <div class="hero-inner">
+                <div>
+                    <div class="hero-tag">
+                        <span>Montessori • Spanish Immersion • Mandarin Immersion</span>
+                    </div>
+                    <h1 class="hero-title" style="font-size: 2rem;">Montessori Philosophy & Language Immersion</h1>
+                    
+                    <!-- Updated Merged Text -->
+                    <div style="color: #f0f9ff; margin-bottom: 24px; font-size: 0.95rem; line-height: 1.6;">
+                        <p style="margin-bottom: 12px;">
+                            At Beibei Amigos Language Preschool, our program is grounded in the Montessori philosophy, which honors each child’s natural curiosity, independence, and love of learning. Children learn best through hands-on exploration, meaningful work, and guided discovery, and our classrooms are carefully prepared to support this process every day.
+                        </p>
+                        <p style="margin-bottom: 12px;">
+                            In every classroom, children engage in authentic Montessori works that develop concentration, critical thinking, fine motor skills, and a deep sense of confidence. Our teachers observe each child closely and provide individualized lessons based on readiness, allowing children to progress at their own pace while building a strong academic and emotional foundation.
+                        </p>
+                        <p style="margin-bottom: 12px;">
+                            Language immersion is fully integrated into our Montessori environment. Each classroom includes dedicated Mandarin and Spanish immersion teachers who guide children through daily routines, lessons, and social interactions entirely in the target language. Rather than teaching languages through memorization or drills, our teachers use natural conversation, songs, stories, and Montessori works to help children acquire language the same way they learned their first language—through meaningful, everyday experiences.
+                        </p>
+                        <p>
+                            By combining Montessori education with Spanish and Mandarin immersion in every classroom, Beibei Amigos gives children the tools to think independently, communicate confidently, and engage with the world in multiple languages. This integrated approach prepares children not only for academic success, but also to become compassionate, capable, and globally minded learners.
+                        </p>
+                    </div>
+
+                    <div class="hero-highlights">
+                        <div class="hero-pill">Montessori Toddlers & Twos</div>
+                        <div class="hero-pill">Montessori Preschool · Ages 3–5</div>
+                        <div class="hero-pill">Spanish & Mandarin Immersion</div>
+                    </div>
+                    <div class="hero-cta" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <!-- ADDED BUTTONS AS REQUESTED -->
+                        <a href="#admission" class="btn btn-enroll">Enroll</a>
+                        <a href="#tour" class="btn btn-primary">Schedule a Tour</a>
+                        <a href="tel:6029964990" class="btn btn-secondary">Call School</a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="hero-main-card">
+                        <!-- Added Picture of Maria Montessori -->
+                        <img class="maria-photo" src="https://www.beibeiamigos.com/wp-content/uploads/2025/12/Prof_Maria_Montessori.jpg" alt="Dr. Maria Montessori">
+                        
+                        <h3>Dr. Maria Montessori observed...</h3>
+                        <p>
+                            That young children learn best through hands-on exploration. Our classrooms are designed to encourage this natural curiosity—offering beautiful, organized learning spaces where each child chooses meaningful work, moves with purpose, and builds confidence through independence.
+                        </p>
+                    </div>
+                    <div class="hero-badge">
+                        Every Material Has a Purpose
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section (Updated Text) -->
+        <section id="montessori-philosophy">
+            <div class="section-heading">
+                <h2>A Philosophy Rooted in Respect and Purpose</h2>
+                <p>
+                    The Montessori method views the child as an active learner with an incredible capacity to absorb knowledge.
+                </p>
+            </div>
+
+            <div class="philosophy-grid">
+                <div>
+                    <h3>Our Teachers Serve as Guides</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">
+                        Observing, preparing lessons, and supporting each child at their unique developmental level. We honor the child's pace, celebrate their progress, and cultivate essential life skills such as concentration, problem-solving, collaboration, and empathy.
+                    </p>
+                    <p style="color: var(--text-muted);">
+                        At Beibei Amigos, the Montessori approach blends seamlessly with our trilingual immersion model. Children receive rich exposure to Spanish, Mandarin, and English, delivered naturally through conversation, lessons, and daily routines.
+                    </p>
+                </div>
+
+                <div class="philosophy-card">
+                    <h3>Vibrant, Multicultural Learning</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">
+                        This creates a vibrant, multicultural learning environment and prepares children to communicate with confidence in the three most spoken languages in the world.
+                    </p>
+                    <ul class="philosophy-list">
+                        <li><div class="philosophy-dot"></div><div>Natural trilingual conversation</div></li>
+                        <li><div class="philosophy-dot"></div><div>Respect for the child's pace</div></li>
+                        <li><div class="philosophy-dot"></div><div>Development of empathy & collaboration</div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Five Areas (Updated Text) -->
+        <section id="five-areas">
+            <div class="section-heading">
+                <h2>The Five Areas of the Montessori Curriculum</h2>
+                <p>Our Montessori Primary and Toddler classrooms include carefully curated materials across the five core Montessori areas:</p>
+            </div>
+
+            <div class="areas-grid">
+                <article class="area-card">
+                    <div class="area-label">Area One</div>
+                    <h3 class="area-title">Practical Life</h3>
+                    <p class="area-body">Children learn everyday skills that build independence—pouring, scooping, buttoning, sweeping, food preparation, and caring for the environment. These activities strengthen fine motor skills, focus, coordination, confidence, and responsibility.</p>
+                </article>
+                <article class="area-card">
+                    <div class="area-label">Area Two</div>
+                    <h3 class="area-title">Sensorial</h3>
+                    <p class="area-body">Sensorial materials help children refine their senses and make sense of the world. Through hands-on exploration of color tablets, sound cylinders, geometric solids, and more, children develop critical thinking and early math and science foundations.</p>
+                </article>
+                <article class="area-card">
+                    <div class="area-label">Area Three</div>
+                    <h3 class="area-title">Mathematics</h3>
+                    <p class="area-body">Using concrete, hands-on materials such as number rods, golden beads, spindle boxes, and bead chains, children gain a deep understanding of numerals, place value, quantity, addition, subtraction, multiplication, and division.</p>
+                </article>
+                <article class="area-card">
+                    <div class="area-label">Area Four</div>
+                    <h3 class="area-title">Language</h3>
+                    <p class="area-body">Through rich exposure to English, Spanish, and Mandarin, children acquire vocabulary, phonetic awareness, reading readiness, writing, and expressive communication. Each language is taught naturally by a native-speaking teacher.</p>
+                </article>
+                <article class="area-card">
+                    <div class="area-label">Area Five</div>
+                    <h3 class="area-title">Cultural Studies</h3>
+                    <p class="area-body">Children explore the world through maps, landforms, botany, zoology, cultural celebrations, and science activities. These lessons spark curiosity about the world and help children appreciate diversity.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Works & Rhythm (Updated Text) -->
+        <section id="works">
+            <div class="section-heading">
+                <h2>Montessori “Works” That Inspire Growth</h2>
+            </div>
+            <div class="works-wrapper">
+                <div>
+                    <h3>Purposeful Activities</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">
+                        In Montessori education, lessons are called works—purposeful activities designed to promote mastery through repetition, exploration, and self-correction. A child may choose a work like the pink tower, tracing sandpaper letters, matching sound cylinders, spooning beans, or labeling the parts of a plant.
+                    </p>
+                    <p style="color: var(--text-muted);">
+                        Each work builds sequential skills and invites the child to concentrate deeply, think independently, and feel proud of their achievement.
+                    </p>
+                </div>
+                <div class="works-highlight">
+                    <h3>Circle Time & The Work Cycle</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">
+                        Every day, children participate in circle time, where they greet one another, sing songs in English, Spanish, and Mandarin, discuss the calendar, practice social skills, and prepare for the work cycle.
+                    </p>
+                    <p style="color: var(--text-muted);">
+                        After circle, the uninterrupted work period begins—one of the most important parts of the Montessori day. This is when children truly flourish, choosing materials that interest them and receiving individualized lessons from their teachers.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-light); margin: 40px 0;">
+
+        <!-- NEW: SAFETY & TRUST SECTION -->
+        <section class="section">
+            <div class="section-heading">
+                <h2>Safety, Quality & Care</h2>
+                <p>We provide a secure, nurturing environment where your child comes first.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" style="text-align: center; border-top: 4px solid var(--primary-blue);">
+                    <i class="fas fa-shield-alt" style="font-size: 2rem; color: var(--primary-blue); margin-bottom: 15px;"></i>
+                    <h3 style="font-size: 1.2rem;">Safe & Secure Campus</h3>
+                    <p style="margin-top: 10px; color: var(--text-muted); font-size: 0.9rem;">
+                        Our North Phoenix campus features secure entry, monitored classrooms, and safety protocols to ensure peace of mind.
+                    </p>
+                </div>
+                <div class="feature-card" style="text-align: center; border-top: 4px solid var(--primary-red);">
+                    <i class="fas fa-user-check" style="font-size: 2rem; color: var(--primary-red); margin-bottom: 15px;"></i>
+                    <h3 style="font-size: 1.2rem;">Qualified Teachers</h3>
+                    <p style="margin-top: 10px; color: var(--text-muted); font-size: 0.9rem;">
+                        All staff are CPR/First Aid certified, fingerprint cleared, and trained in early childhood development.
+                    </p>
+                </div>
+                <div class="feature-card" style="text-align: center; border-top: 4px solid var(--accent-yellow);">
+                    <i class="fas fa-child" style="font-size: 2rem; color: #d97706; margin-bottom: 15px;"></i>
+                    <h3 style="font-size: 1.2rem;">Low Student Ratios</h3>
+                    <p style="margin-top: 10px; color: var(--text-muted); font-size: 0.9rem;">
+                        We maintain low student-to-teacher ratios to ensure every child receives the individual attention and guidance they need.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: TESTIMONIALS SECTION -->
+        <section class="section" style="background-color: #f0f9ff; border-radius: 20px; margin-top: 20px;">
+            <div class="section-heading">
+                <h2>What Parents Say</h2>
+            </div>
+            <div class="grid-2" style="align-items: start; gap: 30px;">
+                <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                    <div style="color: #fbbf24; margin-bottom: 10px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="font-style: italic; color: var(--text-muted); margin-bottom: 15px;">
+                        "BeiBei Amigos is truly a gem! My daughter loves her teachers and comes home singing in Spanish and Mandarin. The Montessori approach has made her so independent."
+                    </p>
+                    <strong style="color: var(--navy);">— Sarah M.</strong>
+                </div>
+                <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                    <div style="color: #fbbf24; margin-bottom: 10px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="font-style: italic; color: var(--text-muted); margin-bottom: 15px;">
+                        "We looked at so many preschools in North Phoenix, but this was the only one that felt like a family. The immersion program is incredible to watch in action."
+                    </p>
+                    <strong style="color: var(--navy);">— David L.</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section" style="max-width: 800px; margin: 0 auto;">
+            <div class="section-heading">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Do you have certified Montessori teachers?</h4>
+                <p>Yes. Our lead guides are certified Montessori teachers dedicated to the philosophy and trained to support your child's development in a trilingual environment.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Does the teacher do individualized instruction for each child?</h4>
+                <p>Yes. A core tenet of our Montessori program is individualized learning. Teachers carefully observe each child and present lessons one-on-one based on their specific readiness, interests, and developmental pace.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Do you have parent-teacher conferences?</h4>
+                <p>Yes, we hold regular conferences to partner with families. These meetings allow us to discuss your child's social, emotional, and academic growth in depth.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Can my child enroll mid-year?</h4>
+                <p>Yes, pending availability. Contact our admissions team to inquire.</p>
+            </div>
+            
+        </section>
+
+        <!-- CALL TO ACTION STRIP -->
+        <div class="cta-section-strip">
+            <h2 style="color: white; margin-bottom: 10px;">Start Your Bilingual Journey</h2>
+            <p style="color: #e0e7ff; margin-bottom: 30px;">Contact us today to learn more about our Phoenix preschool programs.</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="tel:6029964990" class="btn">Call School</a>
+                <a href="#tour" class="btn">Schedule a Tour</a>
+                <a href="#admission" class="btn btn-enroll">Enroll Now</a>
+            </div>
+        </div>
+
+        <!-- MAP SECTION -->
+        <section class="map-section container">
+            <div class="section-heading">
+                <h2>Visit Our Campus</h2>
+                <p>Conveniently located in North Phoenix. Proudly serving families in Deer Valley, Desert Ridge, Norterra, Moon Valley, Tatum Ranch, Aviano, and Paradise Valley.</p>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://maps.google.com/maps?q=751%20E%20Union%20Hills%20Dr%2C%20Phoenix%2C%20AZ%2085024&t=&z=12&ie=UTF8&iwloc=&output=embed" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="BeiBei Amigos Preschool Map">
+                </iframe>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=751+E+Union+Hills+Dr,+Phoenix,+AZ+85024" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-location-arrow" style="margin-right: 8px;"></i> Get Directions
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Script to handle image placeholders -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.onerror = function() {
+                    this.onerror = null;
+                    this.src = 'https://via.placeholder.com/400x300?text=Image+Unavailable';
+                };
+            });
+        });
+    </script>
+
+</body>
+</html>
